@@ -1,0 +1,1259 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Initiativen Berlin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-02 13:25+0200\n"
+"PO-Revision-Date: 2020-04-02 13:25+0200\n"
+"Last-Translator: \n"
+"Language-Team: Initiativen Berlin <m.hengge@studioadhoc.de>\n"
+"Language: de_DE@formal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;gettext;gettext_noop;__;_;_x;esc_html__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:13
+msgid "Uppsss! The content is missing."
+msgstr "Achtung: Diesen Inhalt gibt es wohl nicht."
+
+#: ../404.php:17
+msgid ""
+"Apologies, but the page you requested could not be found. Perhaps searching "
+"will help."
+msgstr ""
+"Entschuldigen sie bitte, aber das was sie gesucht haben, konnte nicht "
+"gefunden werden. Nutzen sie doch die Suchfunktion, um das Gewünschte zu "
+"finden."
+
+#: ../archive.php:47 ../author.php:32 ../category.php:30 ../index.php:27
+#: ../search.php:27 ../tag.php:32
+msgid "< Newer Articles"
+msgstr "< Neuere Artikel"
+
+#: ../archive.php:48 ../author.php:33 ../category.php:31 ../index.php:28
+#: ../search.php:28 ../tag.php:33
+msgid "Older Articles >"
+msgstr "Ältere Artikel >"
+
+#: ../archive.php:57 ../author.php:42 ../category.php:40 ../index.php:37
+#: ../search.php:37 ../tag.php:42
+msgid "Nothing Found"
+msgstr "Keine Einträge"
+
+#: ../archive.php:61 ../author.php:46 ../category.php:44 ../index.php:41
+#: ../tag.php:46
+msgid "Sorry, but no posts were found."
+msgstr "Entschuldigen sie, aber es konnte nichts gefunden werden."
+
+#: ../author.php:18
+#, php-format
+msgid "Author – %s"
+msgstr "Autor – %s"
+
+#: ../category.php:16
+#, php-format
+msgid "Category – %s"
+msgstr "Kategorie - %s"
+
+#: ../comments.php:23
+msgid "Your comment will be reviewed."
+msgstr "Ihr Kommentar wartet auf Überprüfung."
+
+#: ../comments.php:27
+msgid "Reply"
+msgstr "Antworten"
+
+#: ../comments.php:39
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: ../comments.php:39 ../content-page.php:21 ../functions.php:300
+#: ../functions.php:362 ../functions.php:448 ../image.php:78
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: ../comments.php:49
+msgid "This post is protected."
+msgstr "Dieser Artikel ist passwortgeschützt."
+
+#: ../comments.php:62
+msgid "Write a comment"
+msgstr "Schreiben Sie einen Kommentar"
+
+#: ../comments.php:62
+msgid "1 Comment"
+msgstr "1 Kommentar"
+
+#: ../comments.php:62
+msgid "% Comments"
+msgstr "% Kommentare"
+
+#: ../content-page.php:19 ../content-single.php:22 ../content.php:55
+#: ../image.php:61
+msgid "<div class=\"page-link\">Pages: "
+msgstr "<div class=\"page-link\">Seiten: "
+
+#: ../content.php:28 ../content.php:36 ../content.php:39 ../content.php:48
+msgid "Read more >"
+msgstr "Weiterlesen >"
+
+#: ../content.php:52
+msgid "Website"
+msgstr "Link zur Webseite"
+
+#: ../functions.php:22
+msgid "Main Navigation"
+msgstr "Hauptnavigation"
+
+#: ../functions.php:68
+msgid "Sidebar Blog"
+msgstr "Sidebar Blog"
+
+#: ../functions.php:76
+msgid "Sidebar Interal"
+msgstr "Sidebar Intern"
+
+#: ../functions.php:84
+msgid "Sidebar Footer"
+msgstr "Sidebar Footer"
+
+#: ../functions.php:147
+msgid "Next &rsaquo;"
+msgstr "Nächstes &rsaquo;"
+
+#: ../functions.php:148
+msgid "&lsaquo; Back"
+msgstr "&lsaquo; Vorheriges"
+
+#: ../functions.php:149
+msgid "Picture"
+msgstr "Bild"
+
+#: ../functions.php:150
+msgid "of"
+msgstr "von"
+
+#: ../functions.php:151
+msgid "Close"
+msgstr "Schließen"
+
+#: ../functions.php:152
+msgid "Your browser is too old :-)"
+msgstr "Ihr Browser ist zu alt :-)"
+
+#: ../functions.php:259 ../functions.php:651
+msgid "events"
+msgstr "termine"
+
+#: ../functions.php:260
+msgid "event-category"
+msgstr "termin-kategorie"
+
+#: ../functions.php:261
+msgid "members"
+msgstr "mitglieder"
+
+#: ../functions.php:262
+msgid "member-category"
+msgstr "mitglieder-kategorie"
+
+#: ../functions.php:263
+msgid "projects"
+msgstr "projekte"
+
+#: ../functions.php:264
+msgid "project-category"
+msgstr "projekt-kategorie"
+
+#: ../functions.php:265
+msgid "internal"
+msgstr "intern"
+
+#: ../functions.php:266
+msgid "internal-category"
+msgstr "interne-kategorie"
+
+#: ../functions.php:267
+msgid "internal-tags"
+msgstr "interner-tag"
+
+#: ../functions.php:272
+msgid "Member Categories"
+msgstr "Mitglieder-Kategorien"
+
+#: ../functions.php:273
+msgid "Member Category"
+msgstr "Mitglieder-Kategorie"
+
+#: ../functions.php:274
+msgid "Search Member Categories"
+msgstr "Mitglieder-Kategorien durchsuchen"
+
+#: ../functions.php:275
+msgid "All Member Categories"
+msgstr "Alle Mitglieder-Kategorien"
+
+#: ../functions.php:276
+msgid "Parent Member Category"
+msgstr "Übergeordnete Mitglieder-Kategorie"
+
+#: ../functions.php:277
+msgid "Parent Member Category:"
+msgstr "Übergeordnete Mitglieder-Kategorie:"
+
+#: ../functions.php:278 ../functions.php:340 ../functions.php:402
+msgid "Edit Category"
+msgstr "Kategorie bearbeiten"
+
+#: ../functions.php:279 ../functions.php:341 ../functions.php:403
+msgid "Update Category"
+msgstr "Kategorie aktualisieren"
+
+#: ../functions.php:280 ../functions.php:342 ../functions.php:404
+msgid "Add New Category"
+msgstr "Neue Kategorie hinzufügen"
+
+#: ../functions.php:281 ../functions.php:343 ../functions.php:405
+msgid "New Category Name"
+msgstr "Neuer Kategoriename"
+
+#: ../functions.php:282 ../functions.php:344 ../functions.php:406
+#: ../functions.php:758 ../functions.php:765
+msgid "Categories"
+msgstr "Kategorien"
+
+#: ../functions.php:296 ../functions.php:308
+msgid "Members"
+msgstr "Mitglieder"
+
+#: ../functions.php:297
+msgid "Member"
+msgstr "Mitglied"
+
+#: ../functions.php:298 ../functions.php:360 ../functions.php:446
+msgid "Add new"
+msgstr "Erstellen"
+
+#: ../functions.php:299
+msgid "Add new member"
+msgstr "Neues Mitglied hinzufügen"
+
+#: ../functions.php:301
+msgid "New Member"
+msgstr "Neues Mitglied"
+
+#: ../functions.php:302
+msgid "All Members"
+msgstr "Alle Mitglieder"
+
+#: ../functions.php:303 ../functions.php:365 ../functions.php:451
+msgid "View"
+msgstr "Ansehen"
+
+#: ../functions.php:304
+msgid "Search Members"
+msgstr "Mitglieder durchsuchen"
+
+#: ../functions.php:305 ../functions.php:367 ../functions.php:453
+msgid "Nothing found"
+msgstr "Keine Beiträge gefunden"
+
+#: ../functions.php:306
+msgid "No members found in Trash"
+msgstr "Keine Mitglieder im Papierkorb gefunden"
+
+#: ../functions.php:334
+msgid "Project Categories"
+msgstr "Projektkategorien"
+
+#: ../functions.php:335
+msgid "Project Category"
+msgstr "Projektkategorie"
+
+#: ../functions.php:336
+msgid "Search Project Categories"
+msgstr "Projektkategorien durchsuchen"
+
+#: ../functions.php:337
+msgid "All Project Categories"
+msgstr "Alle Projektkategorien"
+
+#: ../functions.php:338
+msgid "Parent Project Category"
+msgstr "Übergeordnete Projektkategorie"
+
+#: ../functions.php:339
+msgid "Parent Project Category:"
+msgstr "Übergeordnete Projektkategorie:"
+
+#: ../functions.php:358 ../functions.php:370
+msgid "Projects"
+msgstr "Projekte"
+
+#: ../functions.php:359
+msgid "Project"
+msgstr "Projekt"
+
+#: ../functions.php:361
+msgid "Add new project"
+msgstr "Neues Projekt hinzufügen"
+
+#: ../functions.php:363
+msgid "New Project"
+msgstr "Neues Projekt"
+
+#: ../functions.php:364
+msgid "All Projects"
+msgstr "Alle Projekte"
+
+#: ../functions.php:366
+msgid "Search projects"
+msgstr "Projekte durchsuchen"
+
+#: ../functions.php:368
+msgid "No projects found in Trash"
+msgstr "Keine Projekte im Papierkorb gefunden"
+
+#: ../functions.php:396
+msgid "Internal Categories"
+msgstr "Internakategorien"
+
+#: ../functions.php:397
+msgid "Internal Category"
+msgstr "Internakategorie"
+
+#: ../functions.php:398
+msgid "Search Internal Categories"
+msgstr "Internakategorien durchsuchen"
+
+#: ../functions.php:399
+msgid "All Internal Categories"
+msgstr "Alle Internakategorien"
+
+#: ../functions.php:400
+msgid "Parent Internal Category"
+msgstr "Übergeordnete Internakategorie"
+
+#: ../functions.php:401
+msgid "Parent Internal Category:"
+msgstr "Übergeordnete Internakategorie:"
+
+#: ../functions.php:420
+msgid "Internal Tags"
+msgstr "Interne Schlagwörter"
+
+#: ../functions.php:421
+msgid "Internal Tag"
+msgstr "Internes Schlagwort"
+
+#: ../functions.php:422
+msgid "Search Internal Tags"
+msgstr "Interne Schlagwörter durchsuchen"
+
+#: ../functions.php:423
+msgid "All Internal Tags"
+msgstr "Alle internen Schlagwörter"
+
+#: ../functions.php:424
+msgid "Parent Internal Tag"
+msgstr "Übergeordnetes internes Schlagwort"
+
+#: ../functions.php:425
+msgid "Parent Internal Tag:"
+msgstr "Übergeordnetes internes Schlagwort:"
+
+#: ../functions.php:426
+msgid "Edit Tag"
+msgstr "Schlagwort bearbeiten"
+
+#: ../functions.php:427
+msgid "Update Tag"
+msgstr "Schlagwort aktualisieren"
+
+#: ../functions.php:428
+msgid "Add New Tag"
+msgstr "Neues Schlagwort hinzufügen"
+
+#: ../functions.php:429
+msgid "New Tag Name"
+msgstr "Neuer Schlagwortname"
+
+#: ../functions.php:430
+msgid "Tags"
+msgstr "Schlagwörter"
+
+#: ../functions.php:444 ../functions.php:456
+msgid "Internal Posts"
+msgstr "Interner Bereich"
+
+#: ../functions.php:445
+msgid "Internal Post"
+msgstr "Interner Beitrag"
+
+#: ../functions.php:447
+msgid "Add new internal post"
+msgstr "Neuen internen Beitrag hinzufügen"
+
+#: ../functions.php:449
+msgid "New Internal Post"
+msgstr "Neuer interner Beitrag"
+
+#: ../functions.php:450
+msgid "All Internal Posts"
+msgstr "Alle internen Beiträge"
+
+#: ../functions.php:452
+msgid "Search Internal Posts"
+msgstr "Interne Beiträge durchsuchen"
+
+#: ../functions.php:454
+msgid "No internal posts found in Trash"
+msgstr "Keine internen Beiträge im Papierkorb gefunden"
+
+#: ../functions.php:516 ../inc/custom-menu.php:43
+msgid "Logout"
+msgstr "Abmelden"
+
+#: ../functions.php:652
+msgid "event"
+msgstr "termin"
+
+#: ../functions.php:757 ../functions.php:763
+msgid "j. F Y"
+msgstr "j. F Y"
+
+#: ../functions.php:759 ../functions.php:768
+msgid "<span class=\"tag-links\"><strong>Tags:</strong> "
+msgstr "<span class=\"tag-links\"><strong>Tags:</strong> "
+
+#: ../header.php:32
+msgid "Menu"
+msgstr "Menü"
+
+#: ../image.php:68
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%7$s</"
+"a>."
+msgstr ""
+"<span class=\"meta-prep meta-prep-entry-date\">Veröffentlicht am</span> "
+"<span class=\"post-date\"><abbr class=\"published\" title=\"%1$s\">%2$s</"
+"abbr></span> mit <a href=\"%3$s\" title=\"Bild in voller Größe\">%4$s "
+"&times; %5$s</a> im Artikel <a href=\"%6$s\" title=\"Zurück zu %7$s\" rel="
+"\"gallery\">%7$s</a>."
+
+#: ../image.php:84
+msgid "&laquo; Next Image"
+msgstr "&laquo; Neuere Artikel"
+
+#: ../image.php:85
+msgid "Previous Image &raquo;"
+msgstr "Ältere Artikel &raquo;"
+
+#: ../inc/custom-block-editor.php:35 ../inc/custom-customizer.php:216
+#: ../inc/custom-customizer.php:234
+msgid "Black"
+msgstr "Schwarz"
+
+#: ../inc/custom-block-editor.php:40 ../inc/custom-customizer.php:217
+#: ../inc/custom-customizer.php:235
+msgid "White"
+msgstr "Weiß"
+
+#: ../inc/custom-block-editor.php:45
+msgid "Gray"
+msgstr "Grau"
+
+#: ../inc/custom-block-editor.php:50 ../inc/custom-customizer.php:80
+#: ../inc/custom-customizer.php:218 ../inc/custom-customizer.php:236
+msgid "Theme Color"
+msgstr "Theme Farbe"
+
+#: ../inc/custom-comments.php:19
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"
+
+#: ../inc/custom-comments.php:21
+msgid ""
+"By using this form you agree with the storage and handling of your data by "
+"this website."
+msgstr ""
+"Mit der Nutzung dieses Formulars erklären Sie sich mit der Speicherung und "
+"Verarbeitung Ihrer Daten durch diese Website einverstanden."
+
+#: ../inc/custom-comments.php:32
+msgid "<strong>ERROR</strong>: Please click our privacy policy checkbox."
+msgstr ""
+"<strong>FEHLER</strong>: Bitte akzeptieren Sie unsere Datenschutzerklärung."
+
+#: ../inc/custom-comments.php:33
+msgid "Comment Submission Failure"
+msgstr "Comment Submission Failure"
+
+#: ../inc/custom-comments.php:54
+msgid "GDPR Accepted On"
+msgstr "Datenschutzerklärung akzeptiert am"
+
+#: ../inc/custom-comments.php:66
+msgid "Not accepted."
+msgstr "Nicht akzeptiert."
+
+#: ../inc/custom-customizer.php:13
+msgid "Banner Text"
+msgstr "Bannertext"
+
+#: ../inc/custom-customizer.php:27
+msgid "Show Page Title"
+msgstr "Seitentitel im Header anzeigen"
+
+#: ../inc/custom-customizer.php:40
+msgid "Activate Website"
+msgstr "Webseite aktivieren"
+
+#: ../inc/custom-customizer.php:48
+msgid "Theme Options"
+msgstr "Theme Optionen"
+
+#: ../inc/custom-customizer.php:59
+msgid "Theme Font"
+msgstr "Theme Schriftart"
+
+#: ../inc/custom-customizer.php:92
+msgid "Lighter Color for Underline"
+msgstr "Unterstreichungen aufhellen"
+
+#: ../inc/custom-customizer.php:109
+msgid "Button Color"
+msgstr "Hintergrundfarbe für Buttons"
+
+#: ../inc/custom-customizer.php:125
+msgid "Theme Navi Color"
+msgstr "Hintergrundfarbe für die Navigation"
+
+#: ../inc/custom-customizer.php:142
+msgid "Theme Navi Button Color"
+msgstr "Hintergrundfarbe für die Navigations-Buttons"
+
+#: ../inc/custom-customizer.php:154
+msgid "Lighter Color for Navi Button Text"
+msgstr "Helle Farbe für die Navigations-Button-Texte"
+
+#: ../inc/custom-customizer.php:170
+msgid "Theme Banner Color"
+msgstr "Hintergrundfarbe für das Banner und den internen Bereich"
+
+#: ../inc/custom-customizer.php:182
+msgid "Banner Color for Navi Button Hover"
+msgstr "Banner-Farbe für den Hover-Status der Navigations-Buttons"
+
+#: ../inc/custom-customizer.php:199
+msgid "Header Image"
+msgstr "Header Bild"
+
+#: ../inc/custom-customizer.php:212
+msgid "Header Text Color"
+msgstr "Header Textfarbe"
+
+#: ../inc/custom-customizer.php:230
+msgid "Header Background Color"
+msgstr "Header Hintergrundfarbe"
+
+#: ../inc/custom-customizer.php:261
+msgid "Activate Members"
+msgstr "Mitglieder aktivieren"
+
+#: ../inc/custom-customizer.php:274
+msgid "Activate Projects"
+msgstr "Projekte aktivieren"
+
+#: ../inc/custom-customizer.php:287
+msgid "Activate Internal"
+msgstr "Internen Bereich aktivieren"
+
+#: ../inc/custom-customizer.php:299
+msgid "Login Page for Internal"
+msgstr "Login-Seite für den internen Bereich"
+
+#: ../inc/custom-customizer.php:300
+msgid "This page needs to contain the [login] shortcode"
+msgstr "Diese Seite muss den Shortcode [login] enthalten"
+
+#: ../inc/custom-customizer.php:308
+msgid "Partner Connection"
+msgstr "Verbindung Partner Server"
+
+#: ../inc/custom-customizer.php:318
+msgid "Partner Connection active"
+msgstr "Verbindung zum Partner-Server aktiv"
+
+#: ../inc/custom-customizer.php:330
+msgid "Partner Server URL"
+msgstr "Partner Server URL"
+
+#: ../inc/custom-customizer.php:331
+msgid "Server URL without trailing slash"
+msgstr "Server URL ohne Slash am Ende der Adresse"
+
+#: ../inc/custom-customizer.php:343
+msgid "Imprint URL"
+msgstr "URL zum Impressum"
+
+#: ../inc/custom-customizer.php:344
+msgid "Please  enter the URL to your imprint"
+msgstr "Bitte geben Sie die URL zum Impressum der Seite an"
+
+#: ../inc/custom-customizer.php:356
+msgid "Liability for editorial content"
+msgstr "Verantwortlich für den Inhalt"
+
+#: ../inc/custom-customizer.php:373
+msgid "Partner Color 1"
+msgstr "Partner Farbe 1"
+
+#: ../inc/custom-customizer.php:390
+msgid "Partner Color 2"
+msgstr "Partner Farbe 2"
+
+#: ../inc/custom-customizer.php:452
+msgid "Custom Post Types"
+msgstr "Custom Post Types"
+
+#: ../inc/custom-customizer.php:460
+msgid "Header"
+msgstr "Header"
+
+#: ../inc/custom-header.php:199
+msgid "Top"
+msgstr "Nach oben"
+
+#: ../inc/custom-header.php:202
+msgid ""
+"<strong>Your browser is too old!</strong><br />Please update your browser"
+msgstr ""
+"<strong>Ihr Browser ist zu alt!</strong><br />Bitte updaten Sie Ihren Browser"
+
+#: ../inc/custom-inis-b-connect.php:21
+msgid "city-topics"
+msgstr "stadtthemen"
+
+#: ../inc/custom-inis-b-connect.php:26
+msgid "City Topics"
+msgstr "Stadtthemen"
+
+#: ../inc/custom-inis-b-connect.php:27
+msgid "City Topic"
+msgstr "Stadtthema"
+
+#: ../inc/custom-inis-b-connect.php:28
+msgid "Search City Topics"
+msgstr "Stadtthemen durchsuchen"
+
+#: ../inc/custom-inis-b-connect.php:29
+msgid "All City Topics"
+msgstr "Alle Stadtthemen"
+
+#: ../inc/custom-inis-b-connect.php:30
+msgid "Parent City Topic"
+msgstr "Übergeordnetes Stadtthema"
+
+#: ../inc/custom-inis-b-connect.php:31
+msgid "Parent City Topic:"
+msgstr "Übergeordnetes Stadtthema:"
+
+#: ../inc/custom-inis-b-connect.php:32
+msgid "Edit Topic"
+msgstr "Thema bearbeiten"
+
+#: ../inc/custom-inis-b-connect.php:33
+msgid "Update Topic"
+msgstr "Thema aktualisieren"
+
+#: ../inc/custom-inis-b-connect.php:34
+msgid "Add New Topic"
+msgstr "Neues Thema hinzufügen"
+
+#: ../inc/custom-inis-b-connect.php:35
+msgid "New Topic Name"
+msgstr "Neuer Themenname"
+
+#: ../inc/custom-inis-b-connect.php:36
+msgid "Topics"
+msgstr "Themen"
+
+#: ../inc/custom-removes.php:76
+msgid "External Content"
+msgstr "Externer Inhalt"
+
+#: ../inc/custom-removes.php:78
+msgid "Link"
+msgstr "Link"
+
+#: ../inc/custom-removes.php:79
+msgid "You need to accept cookies to load this content."
+msgstr ""
+"Sie müssen die Nutzung von Cookies akzeptieren, um den Inhalt sehen zu "
+"können."
+
+#: ../inc/custom-removes.php:80 ../inc/custom-shortcodes.php:391
+msgid "Accept Cookies?"
+msgstr "Cookies akzeptieren?"
+
+#: ../inc/custom-shortcodes.php:325 ../inc/custom-shortcodes.php:335
+msgid "Email Address"
+msgstr "E-Mailadresse"
+
+#: ../inc/custom-shortcodes.php:326 ../inc/custom-shortcodes.php:340
+msgid "First Name"
+msgstr "Vorname"
+
+#: ../inc/custom-shortcodes.php:327 ../inc/custom-shortcodes.php:346
+msgid "Last Name"
+msgstr "Nachname"
+
+#: ../inc/custom-shortcodes.php:355
+msgid "Subscribe"
+msgstr "Anmelden"
+
+#: ../inc/custom-shortcodes.php:359
+msgid "indicates required"
+msgstr "Pflichtfelder"
+
+#: ../inc/custom-shortcodes.php:377
+msgid "Username"
+msgstr "Benutzername"
+
+#: ../inc/custom-shortcodes.php:389
+msgid "You need to accept cookies to log into this website."
+msgstr ""
+"Sie müssen die Nutzung von Cookies akzeptieren, damit Sie sich einloggen "
+"können."
+
+#: ../inc/custom-shortcodes.php:421
+msgid "Cookies not accepted"
+msgstr "Cookies werden nicht akzeptiert"
+
+#: ../inc/custom-shortcodes.php:425
+msgid "Cookies accepted"
+msgstr "Cookies werden akzeptiert"
+
+#: ../inc/custom-shortcodes.php:428
+msgid "Current status"
+msgstr "Aktueller Status"
+
+#: ../inc/custom-shortcodes.php:429
+msgid "Change your cookie status?"
+msgstr "Den Umgang mit Cookies ändern?"
+
+#: ../inc/custom-shortcodes.php:453
+msgid "Share"
+msgstr "Teilen"
+
+#: ../inc/custom-shortcodes.php:474
+msgid "Permalink"
+msgstr "Permalink"
+
+#: ../inc/custom-shortcodes.php:480
+msgid "Mail"
+msgstr "E-Mail"
+
+#: ../inc/custom-shortcodes.php:481
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/custom-shortcodes.php:482
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/custom-shortcodes.php:890
+msgid "Alle"
+msgstr "Alle"
+
+#: ../search.php:16
+#, php-format
+msgid "Search Results <span class=\"sub-title\">%s</span>"
+msgstr "Suchergebnisse <span class=\"sub-title\">%s</span>"
+
+#: ../search.php:41
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Entschuldigen sie, aber es konnte nichts gefunden werden. Versuchen sie es "
+"mit anderen Schlüsselwörtern erneut."
+
+#: ../tag.php:18
+#, php-format
+msgid "Tagged as - %s"
+msgstr "Getagged als - %s"
+
+#: ../assets/js/functions_block-editor.js:9
+msgid "Boxed Paragraph"
+msgstr "Absatz Boxed"
+
+#: ../assets/js/functions_block-editor.js:13
+msgid "Boxed Heading"
+msgstr "Überschrift Boxed"
+
+#: ../assets/js/functions_block-editor.js:18
+msgid "Toggle Heading"
+msgstr "Überschrift Toggle"
+
+#: ../assets/js/functions_block-editor.js:22
+msgid "Boxed Toggle Heading"
+msgstr "Überschrift Toggle Boxed"
+
+#: ../assets/js/functions_block-editor.js:27
+msgid "Download List"
+msgstr "Downloadliste"
+
+#: ../assets/js/functions_block-editor.js:31
+msgid "Boxed List"
+msgstr "Liste Boxed"
+
+#: ../assets/js/functions_block-editor.js:35
+msgid "Boxed Download List"
+msgstr "Downloadliste Boxed"
+
+#: ../assets/js/functions_block-editor.js:39
+#: ../assets/js/functions_block-editor.js:43
+msgid "Boxed Button"
+msgstr "Button Boxed"
+
+#~ msgid "Archive – %s"
+#~ msgstr "Archiv – %s"
+
+#~ msgid "Content Feed"
+#~ msgstr "Content Feed"
+
+#~ msgid "A custom content feed."
+#~ msgstr "Ein Content Feed."
+
+#~ msgid "Slider/Accordion"
+#~ msgstr "Slider/Accordion"
+
+#~ msgid "A slider or accordion."
+#~ msgstr "Ein Slider oder Accordion."
+
+#~ msgid "Please choose..."
+#~ msgstr "Bitte auswählen..."
+
+#~ msgid "poll"
+#~ msgstr "umfrage"
+
+#~ msgid "Events"
+#~ msgstr "Termine"
+
+#~ msgid "Event"
+#~ msgstr "Termin"
+
+#~ msgid "Add new event"
+#~ msgstr "Neuen Termin erstellen"
+
+#~ msgid "New Event"
+#~ msgstr "Neuer Termin"
+
+#~ msgid "All Events"
+#~ msgstr "Alle Termine"
+
+#~ msgid "Search Events"
+#~ msgstr "Termine durchsuchen"
+
+#~ msgid "No events found in Trash"
+#~ msgstr "Keine Termine im Papierkorb gefunden"
+
+#~ msgid "Translation"
+#~ msgstr "Übersetzung"
+
+#~ msgid "Active Translation"
+#~ msgstr "Aktive Übersetzung"
+
+#~ msgid "Custom Site Title"
+#~ msgstr "Individueller Seitentitel"
+
+#~ msgid "Comments are closed."
+#~ msgstr "Kommentare sind geschlossen."
+
+#~ msgid "Set ID of translated site"
+#~ msgstr "Wähle die Seite an, die übersetzt werden soll"
+
+#~ msgid "Translated site"
+#~ msgstr "Übersetzte Seite"
+
+#~ msgid "Service Navigation"
+#~ msgstr "Servicenavigation"
+
+#~ msgid "exhibitions"
+#~ msgstr "ausstellungen"
+
+#~ msgid "locations"
+#~ msgstr "orte"
+
+#~ msgid "Locations"
+#~ msgstr "Orte"
+
+#~ msgid "Location"
+#~ msgstr "Ort"
+
+#~ msgid "Search Locations"
+#~ msgstr "Orte durchsuchen"
+
+#~ msgid "All Locations"
+#~ msgstr "Alle Orte"
+
+#~ msgid "Parent Location:"
+#~ msgstr "Übergeordneter Ort:"
+
+#~ msgid "Edit Location"
+#~ msgstr "Ort bearbeiten"
+
+#~ msgid "Update Location"
+#~ msgstr "Ort aktualisieren"
+
+#~ msgid "Exhibitions"
+#~ msgstr "Ausstellungen"
+
+#~ msgid "Exhibition"
+#~ msgstr "Ausstellung"
+
+#~ msgid "Add new exhibition"
+#~ msgstr "Neue Ausstellung hinzufügen"
+
+#~ msgid "New Exhibition"
+#~ msgstr "Neue Ausstellung"
+
+#~ msgid "All Exhibitions"
+#~ msgstr "Alle Ausstellungen"
+
+#~ msgid "Search Exhibitions"
+#~ msgstr "Ausstellungen durchsuchen"
+
+#~ msgid "No exhibitions found in Trash"
+#~ msgstr "Keine Ausstellungen im Papierkorb gefunden"
+
+#~ msgid "Social Navigation"
+#~ msgstr "Social Navigation"
+
+#~ msgid "Products"
+#~ msgstr "Produkte"
+
+#~ msgid "Product"
+#~ msgstr "Produkt"
+
+#~ msgid "Close layer"
+#~ msgstr "Layer schließen"
+
+#~ msgid "Open layer"
+#~ msgstr "Layer öffnen"
+
+#~ msgid "News"
+#~ msgstr "Aktuelles"
+
+#~ msgid "< Back to overview"
+#~ msgstr "< Zurück zur Übersicht"
+
+#~ msgid "Sidebar Page"
+#~ msgstr "Sidebar Seite"
+
+#~ msgid "Sidebar Homepage"
+#~ msgstr "Sidebar Homepage"
+
+#~ msgid "Seminars"
+#~ msgstr "Seminare"
+
+#~ msgid "Seminar"
+#~ msgstr "Seminar"
+
+#~ msgid "New Seminar"
+#~ msgstr "Neues Seminar"
+
+#~ msgid "All Seminars"
+#~ msgstr "Alle Seminare"
+
+#~ msgid "Publication"
+#~ msgstr "Veröffentlichung"
+
+#~ msgid "Show all >"
+#~ msgstr "Alle zeigen >"
+
+#~ msgid "by "
+#~ msgstr "von "
+
+#~ msgid "<strong>&lsaquo;</strong> Newer Articles"
+#~ msgstr "<strong>&lsaquo;</strong> Neuere Artikel"
+
+#~ msgid "Older Articles <strong>&rsaquo;</strong>"
+#~ msgstr "Ältere Artikel <strong>&rsaquo;</strong>"
+
+#~ msgid "Daily Archives - <strong>%s</strong>"
+#~ msgstr "Tagesarchiv - <strong>%s</strong>"
+
+#~ msgid "Monthly Archives - <strong>%s</strong>"
+#~ msgstr "Monatsarchiv - <strong>%s</strong>"
+
+#~ msgid "Yearly Archives - <strong>%s</strong>"
+#~ msgstr "Jahresarchiv - <strong>%s</strong>"
+
+#~ msgid "Author - <strong class=\"vcard\">%s</strong>"
+#~ msgstr "Autor - <strong class=\"vcard\">%s</strong>"
+
+#~ msgid "Read more &raquo;"
+#~ msgstr "Weiterlesen &raquo;"
+
+#~ msgid "Features"
+#~ msgstr "Features"
+
+#~ msgid "Feature"
+#~ msgstr "Feature"
+
+#~ msgid "Add new feature"
+#~ msgstr "Neues Feature hinzufügen"
+
+#~ msgid "New Feature"
+#~ msgstr "Neues Feature"
+
+#~ msgid "All Features"
+#~ msgstr "Alle Features"
+
+#~ msgid "Search Features"
+#~ msgstr "Features durchsuchen"
+
+#~ msgid "No features found in Trash"
+#~ msgstr "Keine Features im Papierkorb gefunden"
+
+#~ msgid "Team"
+#~ msgstr "Team"
+
+#~ msgid "Screens"
+#~ msgstr "Screens"
+
+#~ msgid "Screen"
+#~ msgstr "Screen"
+
+#~ msgid "New Screen"
+#~ msgstr "Neuer Screen"
+
+#~ msgid "All Screens"
+#~ msgstr "Alle Screens"
+
+#~ msgid "Search Screens"
+#~ msgstr "Screens durchsuchen"
+
+#~ msgid "Back to top"
+#~ msgstr "Zurück nach oben"
+
+#~ msgid "collections"
+#~ msgstr "Bildbestände"
+
+#~ msgid "Hide collections"
+#~ msgstr "Weniger Bildbestände zeigen"
+
+#~ msgid "Choices"
+#~ msgstr "Choices"
+
+#~ msgid "Choice"
+#~ msgstr "Choice"
+
+#~ msgid "New Choice"
+#~ msgstr "Neue Choice"
+
+#~ msgid "Pointers"
+#~ msgstr "Pointer"
+
+#~ msgid "New Pointer"
+#~ msgstr "Neuer Pointer"
+
+#~ msgid "Fact"
+#~ msgstr "Fact"
+
+#~ msgid "Hints"
+#~ msgstr "Hints"
+
+#~ msgid "Hint"
+#~ msgstr "Hint"
+
+#~ msgid "Add new hint"
+#~ msgstr "Neuen Hint hinzufügen"
+
+#~ msgid "Studios"
+#~ msgstr "Studios"
+
+#~ msgid "No studios found"
+#~ msgstr "Keine Studios gefunden"
+
+#~ msgid "Please change the selection in your filters."
+#~ msgstr "Bitte ändern Sie die Einstellungen in Ihrem Filter."
+
+#~ msgid "Parent Object:"
+#~ msgstr "Übergeordnetes Gebäude:"
+
+#~ msgid "Edit Object"
+#~ msgstr "Gebäude bearbeiten"
+
+#~ msgid "Update Object"
+#~ msgstr "Gebäude aktualisieren"
+
+#~ msgid "New Object Name"
+#~ msgstr "Neuer Gebäudename"
+
+#~ msgid "Floors"
+#~ msgstr "Geschosse"
+
+#~ msgid "Floor"
+#~ msgstr "Geschoss"
+
+#~ msgid "Search Floors"
+#~ msgstr "Geschosse durchsuchen"
+
+#~ msgid "All Floors"
+#~ msgstr "Alle Geschosse"
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Parent Status:"
+#~ msgstr "Übergeordneter Status:"
+
+#~ msgid "Edit Status"
+#~ msgstr "Status bearbeiten"
+
+#~ msgid "Update Status"
+#~ msgstr "Status aktualisieren"
+
+#~ msgid "Add New Status"
+#~ msgstr "Neuen Status hinzufügen"
+
+#~ msgid "New Status Name"
+#~ msgstr "Neuer Statusname"
+
+#~ msgid "Studio"
+#~ msgstr "Studio"
+
+#~ msgid "Add new studio"
+#~ msgstr "Neues Studio hinzufügen"
+
+#~ msgid "New Studio"
+#~ msgstr "Neues Studio"
+
+#~ msgid "All Studios"
+#~ msgstr "Alle Studios"
+
+#~ msgid "Object:"
+#~ msgstr "Gebäude:"
+
+#~ msgid "Floor:"
+#~ msgstr "Geschoss:"
+
+#~ msgid "Size:"
+#~ msgstr "Größe:"
+
+#~ msgid "Options saved"
+#~ msgstr "Optionen gesichert"
+
+#~ msgid "Public pages by ID (i.e. 10,12,29)"
+#~ msgstr "Öffentliche Seiten-ID (z.B. 10,12,29)"
+
+#~ msgid "Redirect"
+#~ msgstr "Weiterleitung"
+
+#~ msgid "Redirect after Login"
+#~ msgstr "Weiterleitung nach Login"
+
+#~ msgid "Save Options"
+#~ msgstr "Optionen speichern"
+
+#~ msgid "Sizes"
+#~ msgstr "Größen"
+
+#~ msgid "Parent Size"
+#~ msgstr "Übergeordnete Größe"
+
+#~ msgid "0 Comments"
+#~ msgstr "Keine Kommentare"
+
+#~ msgid "References"
+#~ msgstr "Referenzen"
+
+#~ msgid "Reference"
+#~ msgstr "Referenzen"
+
+#~ msgid "More Information »"
+#~ msgstr "Mehr Informationen »"
+
+#~ msgid "(Edit)"
+#~ msgstr "Bearbeiten "
+
+#, fuzzy
+#~ msgid "Referenzen"
+#~ msgstr "Referenz"
+
+#, fuzzy
+#~ msgid "Referenz"
+#~ msgstr "Referenz"
+
+#, fuzzy
+#~ msgid "Neue Referenz erstellen"
+#~ msgstr "Neue Referenz"
+
+#, fuzzy
+#~ msgid "Neue Referenz"
+#~ msgstr "Neue Referenz"
+
+#, fuzzy
+#~ msgid "Alle Referenzen"
+#~ msgstr "Alle Referenzen"
+
+#, fuzzy
+#~ msgid "Refernzen durchsuchen"
+#~ msgstr "Referenz"
+
+#~ msgid "Uppsss!"
+#~ msgstr "Uppsss!"
+
+#~ msgid "Tag Archives:"
+#~ msgstr "Archiv des Tags"
+
+#~ msgid "Daily Archives:"
+#~ msgstr "Tagesarchiv für"
+
+#~ msgid "Monthly Archives:"
+#~ msgstr "Monatsarchiv für"
+
+#~ msgid "F Y"
+#~ msgstr "F Y"
+
+#~ msgid "Yearly Archives:"
+#~ msgstr "Jahresarchiv für"
+
+#~ msgid "Y"
+#~ msgstr "Y"
+
+#~ msgid "Author Archives:"
+#~ msgstr "Autoren Archiv von"
+
+#~ msgid "Blog Archive"
+#~ msgstr "Blog Archiv"
+
+#~ msgid "Sorry, there are no entries in this archive."
+#~ msgstr "Leider sind in dieser Kategorie noch keine Einträge vorhanden."
+
+#~ msgid "<p>Read the rest of this page &raquo;</p>"
+#~ msgstr "<p>Lese den Rest der Seite &raquo;</p>"
+
+#~ msgid "Edit this entry."
+#~ msgstr "Bearbeiten."
+
+#~ msgid "j F. Y"
+#~ msgstr "j F. Y"
+
+#~ msgid "j.F Y"
+#~ msgstr "j.F Y"
+
+#~ msgid "Archive of articles tagged as"
+#~ msgstr "Archiv des Tags"

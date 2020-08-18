@@ -1,0 +1,203 @@
+/* ---- Webfonts Fonts ----*/
+/* work-sans-regular - latin_latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans'), local('WorkSans-Regular'),
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-regular.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+
+/* work-sans-600 - latin_latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans SemiBold'), local('WorkSans-SemiBold'),
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-600.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+
+/* work-sans-700 - latin_latin-ext */
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans Bold'), local('WorkSans-Bold'),
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans/work-sans-v3-latin_latin-ext-700.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body.mceContentBody {
+	font-family: 'Work Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+	color: #000;
+	letter-spacing: -0.005em;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+	outline: none;
+	transition: color 0.5s;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+	outline: none;
+	transition: color 0.5s;
+}
+
+h1, h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+	padding-bottom: 30px;
+	letter-spacing: 0.01em;
+}
+
+h2 {
+  font-weight: 400;
+	letter-spacing: -0.01em;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0;
+	padding-bottom: 10px;
+}
+
+h4, h5, h6 {
+	font-weight: 600;
+	font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0;
+  padding: 0 0 14px;
+}
+
+h5, h6 {
+  font-weight: 400;
+	letter-spacing: -0.005em;
+}
+
+p {
+	padding-bottom: 14px;
+}
+
+strong, b {
+	font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+em, italic {
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 0.1em white,
+    inset 0 -0.5em #e6ff00;
+  display: inline;
+}
+
+.small, small {
+	font-size: 16px;
+}
+
+blockquote {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+ul, ol {
+	padding-bottom: 14px;
+}
+
+ul ul, ol ol {
+	padding-bottom: 0px;
+}
+
+ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+	list-style: none;
+	padding-bottom: 7px;
+}
+
+ul li:before {
+	content: '•';
+	padding-right: 11px;
+	color: #000;
+}
+
+ol li {
+	position: relative;
+	left: 20px;
+	list-style: decimal;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    width: 33%;
+    padding-right: 40px;
+    vertical-align: top;
+}
+
+/* Bilder */
+.alignleft {
+	float: left;
+	margin: 4px 10px 14px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 4px 0 14px 10px;
+}
+
+.wp-caption {
+	color: #000;
+}
+
+.wp-caption img {
+	padding: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.wp-caption p {
+	padding: 0px 5px 5px 5px;
+	margin-bottom: 0;
+}

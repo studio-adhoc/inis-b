@@ -1,0 +1,16 @@
+html {
+  opacity: 1;
+}
+
+.a_navi {
+  padding-top: 20px;
+}
+
+.navi-inner {
+  max-height: 10000em;
+  overflow: visible;
+}
+
+.navi-button {
+  display: none;
+}

@@ -1,0 +1,25 @@
+.the-tagcloud a {
+	font-size: 12px !important;
+}
+
+/* ACF Bug Meta Boxes Display */
+.post-type-post #acf-group_5bc4a5a248767,
+.post-type-post #acf-group_5b9f9166b28ba,
+.post-type-post #acf-group_5bc4a5461a775 {
+	display: none;
+}
+
+.post-type-member #acf-group_5b9f9166b28ba,
+.post-type-member #acf-group_5bc4a5461a775 {
+	display: none;
+}
+
+.post-type-event #acf-group_5bc4a5a248767,
+.post-type-event #acf-group_5b9f9166b28ba {
+	display: none;
+}
+
+.post-type-page #acf-group_5bc4a5a248767,
+.post-type-page #acf-group_5bc4a5461a775 {
+	display: none;
+}
