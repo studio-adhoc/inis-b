@@ -811,6 +811,7 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 .uses-block-editor .post-content > .is-style-button-boxed,
 .uses-block-editor .post-content .wp-block-group__inner-container > .is-style-paragraph-boxed,
 .uses-block-editor .post-content .wp-block-group__inner-container > .is-style-heading-boxed,
+.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-heading-toggle-boxed,
 .uses-block-editor .post-content .wp-block-group__inner-container > .is-style-list-boxed,
 .uses-block-editor .post-content .wp-block-group__inner-container > .is-style-list-download-boxed,
 .uses-block-editor .post-content .wp-block-group__inner-container > .is-style-button-boxed  {
@@ -827,6 +828,7 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 .uses-block-editor .list-item .post-content > .is-style-button-boxed,
 .uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-paragraph-boxed,
 .uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-heading-boxed,
+.uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-heading-toggle-boxed,
 .uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-list-boxed,
 .uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-list-download-boxed,
 .uses-block-editor .list-item .post-content .wp-block-group__inner-container > .is-style-button-boxed {
@@ -3034,6 +3036,7 @@ body.font-plex-mono,
 	.uses-block-editor .post-content > .is-style-button-boxed,
 	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-paragraph-boxed,
 	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-heading-boxed,
+	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-heading-toggle-boxed,
 	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-list-boxed,
 	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-list-download-boxed,
 	.uses-block-editor .post-content .wp-block-group__inner-container > .is-style-button-boxed  {

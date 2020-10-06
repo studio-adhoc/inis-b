@@ -252,17 +252,19 @@ function inis_b_customizer( $wp_customize ) {
   ));*/
 
   // Activate Member CPT
-  $wp_customize->add_setting('inis_b_active_members', array(
-    'capability'        => 'edit_theme_options',
-    'sanitize_callback' => 'absint',
-  ));
+  if (function_exists('get_field')) {
+    $wp_customize->add_setting('inis_b_active_members', array(
+      'capability'        => 'edit_theme_options',
+      'sanitize_callback' => 'absint',
+    ));
 
-  $wp_customize->add_control('inis_b_active_members', array(
-    'label'      => __('Activate Members', 'inis-b'),
-    'section'    => 'inis_b_theme_options_section',
-    'type'       => 'checkbox',
-    'settings'   => 'inis_b_active_members',
-  ));
+    $wp_customize->add_control('inis_b_active_members', array(
+      'label'      => __('Activate Members', 'inis-b'),
+      'section'    => 'inis_b_theme_options_section',
+      'type'       => 'checkbox',
+      'settings'   => 'inis_b_active_members',
+    ));
+  }
 
   // Activate Project CPT
   $wp_customize->add_setting('inis_b_active_projects', array(
