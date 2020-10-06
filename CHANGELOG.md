@@ -11,8 +11,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 - Show Members CTP in Customizer if ACF Plugin is activated
 
-### Changed
-
 ### Fixed
 
 - Adjust custom color styles for Events Calendar Plugin
