@@ -16,6 +16,9 @@
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-thumbnail thumbnail">
 			<?php echo get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
+			<?php if ( get_the_post_thumbnail_caption(get_the_ID()) ) {
+				$output .= '<span class="post-thumbnail-caption thumbnail-caption">' . get_the_post_thumbnail_caption(get_the_ID()) . '</span>';
+			} ?>
 		</div>
 	<?php endif; ?>
 

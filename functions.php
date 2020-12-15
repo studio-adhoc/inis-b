@@ -202,7 +202,7 @@ add_action( 'template_redirect', 'custom_redirect' );
 /* Custom Admin Redirects
 /*-----------------------------------------------------------------------------------*/
 function restrict_admin() {
-  if ( ! current_user_can( 'edit_posts' ) && ( ! wp_doing_ajax() ) ) {
+	if ( ! current_user_can( 'edit_posts' ) && ! wp_doing_ajax() ) {
 		$internal_url = get_post_type_archive_link( 'internal' );
     wp_redirect( $internal_url );
     exit;
