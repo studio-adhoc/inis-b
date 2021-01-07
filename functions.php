@@ -29,7 +29,7 @@ register_nav_menus( array(
 add_editor_style( 'assets/css/style_editor.css' );
 
 function admin_style() {
-  echo '<link rel="stylesheet" type="text/css" href="'. get_template_directory() .'/assets/css/style_admin.css" />';
+  echo '<link rel="stylesheet" type="text/css" href="'. get_bloginfo('template_directory') .'/assets/css/style_admin.css" />';
 }
 add_action( 'admin_head', 'admin_style' );
 
@@ -151,6 +151,11 @@ function inis_b_custom_read_more_button($output) {
 	return $output;
 }
 add_filter( 'inis_b_read_more_button', 'inis_b_custom_read_more_button' );
+
+function inis_b_custom_before_single_post_content() { ?>
+	<?php if ( is_internal() ) { internal_header(); } ?>
+<?php }
+add_action( 'inis_b_before_single_post_content', 'inis_b_custom_before_single_post_content' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Change Thickbox text
@@ -568,34 +573,40 @@ function get_internal_sidebar() {
 /*-----------------------------------------------------------------------------------*/
 /* Custom Internal Category Output
 /*-----------------------------------------------------------------------------------*/
-function the_internal_category($sep = ' ') {
-	echo get_internal_category($sep);
+function the_internal_category($sep = ' ', $pID = false) {
+	echo get_internal_category($sep,$pID);
 }
 
-function get_internal_category($sep = ' ') {
+function get_internal_category($sep = ' ', $pID = false) {
 	return get_cpt_category($sep, 'internal-category');
 }
 
-function the_internal_tag($sep = ' ') {
-	echo get_internal_tag($sep);
+function the_internal_tag($sep = ' ', $pID = false) {
+	echo get_internal_tag($sep,$pID);
 }
 
-function get_internal_tag($sep = ' ') {
-	return get_cpt_category($sep, 'internal-tag');
+function get_internal_tag($sep = ' ', $pID = false) {
+	return get_cpt_category($sep,$pID, 'internal-tag');
 }
 
-function the_project_category($sep = ' ') {
-	echo get_project_category($sep);
+function the_project_category($sep = ' ', $pID = false) {
+	echo get_project_category($sep,$pID);
 }
 
-function get_project_category($sep = ' ') {
-	return get_cpt_category($sep, 'project-category');
+function get_project_category($sep = ' ', $pID = false) {
+	return get_cpt_category($sep, 'project-category',$pID);
 }
 
-function get_cpt_category($sep = ' ', $tax) {
+function get_cpt_category($sep = ' ', $tax, $pID = false) {
 	$output = '';
 
-	$terms = get_the_terms( get_the_ID(), $tax );
+	if ($pID) {
+		$postID = $pID;
+	} else {
+		$postID = get_the_ID();
+	}
+
+	$terms = get_the_terms( $postID, $tax );
 	$term_i = 0;
 
 	if ( $terms && ! is_wp_error( $terms ) ) {

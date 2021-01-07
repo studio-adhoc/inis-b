@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 <div class="a_content">
-	<?php if ( is_internal() ) { internal_header(); } ?>
+	<?php do_action( 'inis_b_before_single_post_content' ); ?>
 
 	<div class="a_content_inner">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

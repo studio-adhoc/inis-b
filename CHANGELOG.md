@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.3] - YYYY-MM-DD
+
+### Added
+
+- Get CPT Taxonomies by Post IDs
+- Add action 'inis_b_before_single_post_content' in single.php
+- Custom CSS Classes for Sharer Buttons
+
+### Fixed
+
+- Adjust Top Link CSS
+- Fixed Admin CSS URL
+
 ## [1.0.2] - 2020-12-15
 
 ### Added
