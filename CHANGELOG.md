@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.4] - 2021-01-28
+
+### Changed
+
+- Disable YouTube Videos if Cookie Notice is not accepted
+
+### Fixed
+
+- Adjust Seperator Block Background Color
+- Fixed Padding Display for Columns
+
 ## [1.0.3] - 2021-01-07
 
 ### Added

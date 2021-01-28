@@ -939,6 +939,10 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 	width: 100%;
 }
 
+.uses-block-editor .wp-block-group {
+	box-sizing: content-box;
+}
+
 .uses-block-editor .toggle-content.closed {
 	display: none;
 	width: 100% !important;
@@ -1035,6 +1039,10 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 
 .wp-block-columns {
 	display: block;
+}
+
+.wp-block-columns.has-background {
+	padding: 14px 18px;
 }
 
 .wp-block-column:not(:first-child) {
@@ -1597,11 +1605,12 @@ hr {
 	display: none;
 }
 
-hr.wp-block-separator {
+.wp-block-separator {
   display: block;
   box-shadow: none;
   border: 0;
-  border-bottom: 1px solid #000;
+  height: 1px;
+	background-color: #000;
 	margin: 40px 18px;
   max-width: 1100px;
 }

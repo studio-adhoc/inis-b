@@ -487,6 +487,7 @@ h2.is-style-heading-toggle-boxed:after {
   border-color: #000;
   border-width: 1px;
   max-width: 1100px;
+  opacity: 1;
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {

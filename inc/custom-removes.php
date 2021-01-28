@@ -65,13 +65,7 @@ add_filter( 'rest_api_init', 'rest_only_for_authorized_users', 99 );
 /* Youtube NoCookie Domain for Embeds / Cookie Box for other Embeds
 /*-----------------------------------------------------------------------------------*/
 function inis_b_custom_embeds( $html, $url, $attr, $post_ID ) {
-	if ( preg_match('#https?://(www\.)?youtu#i', $url) ) {
-		return preg_replace(
-			'#src=(["\'])(https?:)?//(www\.)?youtube\.com#i',
-			'src=$1$2//$3youtube-nocookie.com',
-			$html
-		);
-	} elseif (!is_admin() && (function_exists('cn_cookies_accepted') && !cn_cookies_accepted())) {
+	if (!is_admin() && (function_exists('cn_cookies_accepted') && !cn_cookies_accepted())) {
 		$html = '<div class="box dark-box cookie-box">';
 			$html .= '<h3>' . __('External Content','inis-b') . '</h3>';
 			$html .= '<p>';
@@ -80,6 +74,12 @@ function inis_b_custom_embeds( $html, $url, $attr, $post_ID ) {
         $html .= '<a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button button">' . __('Accept Cookies?','inis-b') . '</a>';
 			$html .= '</p> ';
 		$html .= '</div>';
+	} elseif ( preg_match('#https?://(www\.)?youtu#i', $url) ) {
+		return preg_replace(
+			'#src=(["\'])(https?:)?//(www\.)?youtube\.com#i',
+			'src=$1$2//$3youtube-nocookie.com',
+			$html
+		);
 	}
 
 	return $html;
