@@ -7,7 +7,7 @@
 <?php get_header(); ?>
 
 <div class="a_content">
-	<?php do_action( 'inis_b_before_single_post_content' ); ?>
+	<?php do_action( 'inis_b_before_single_post' ); ?>
 
 	<div class="a_content_inner">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -16,6 +16,8 @@
 
 	<?php endwhile; ?>
 	</div>
+
+	<?php do_action( 'inis_b_after_single_post' ); ?>
 </div>
 
 <?php get_sidebar(); ?>

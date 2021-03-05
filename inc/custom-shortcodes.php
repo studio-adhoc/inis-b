@@ -566,6 +566,7 @@ function post_list_default_atts() {
 		'meta_key' => '',
     'id' => '',
     'cat' => '',
+    'tag' => '',
     'exclude_cat' => '',
 		'posts_per_page' => -1,
     'layout' => 'post-list',
@@ -684,6 +685,10 @@ function post_list( $atts ) {
               )
             );
           }
+        }
+
+        if ( $atts['tag'] != '' ) {
+          $args['tag'] = $atts['tag'];
         }
 
         if ( $atts['cat'] != '' ) {

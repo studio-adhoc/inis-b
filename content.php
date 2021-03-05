@@ -5,6 +5,8 @@
 **/ ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php do_action( 'inis_b_before_archive_post_header' ); ?>
+
 	<header class="post-header">
 		<h2 class="post-title">
 			<?php echo get_post_title_link($post); ?>
@@ -12,6 +14,8 @@
 			<?php echo get_post_title_link_end($post); ?>
 		</h2>
 	</header>
+
+	<?php do_action( 'inis_b_after_archive_post_content' ); ?>
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-thumbnail thumbnail">
@@ -21,6 +25,8 @@
 			} ?>
 		</div>
 	<?php endif; ?>
+
+	<?php do_action( 'inis_b_before_archive_post_content' ); ?>
 
 	<div class="post-content-inner">
 		<div class="post-wrapper">
@@ -59,5 +65,8 @@
 			<?php inis_b_post_footer(); ?>
 		</div>
 	</div>
+
+	<?php do_action( 'inis_b_after_archive_post_content' ); ?>
+
 	<div class="clear"></div>
 </article>

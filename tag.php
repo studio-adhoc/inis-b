@@ -14,9 +14,9 @@
 					<?php the_post(); ?>
 
 					<header>
-						<h3 class="archive-title">
-							<?php printf(__('Tagged as - %s', 'inis-b'), single_tag_title( '', false ) ); ?>
-						</h3>
+						<?php the_archive_title( '<h3 class="archive-title">', '</h3>' ); ?>
+
+						<?php $termdesc = term_description(); if ( ! empty( $termdesc ) ) echo apply_filters( 'inis_b_archive_meta', '<div class="archive-meta">' . $termdesc . '</div>' ); ?>
 					</header>
 
 					<?php rewind_posts(); ?>
@@ -37,6 +37,8 @@
 
 				<?php else : ?>
 
+					<?php do_action( 'inis_b_before_empty_archive' ); ?>
+
 					<article class="post not-found error-404">
 						<header>
 							<h2 class="post-title"><?php _e( 'Nothing Found', 'inis-b' ); ?></h2>
@@ -46,6 +48,8 @@
 							<p><?php _e('Sorry, but no posts were found.', 'inis-b'); ?></p>
 						</div>
 					</article>
+
+					<?php do_action( 'inis_b_after_empty_archive' ); ?>
 
 				<?php endif; ?>
 			</div>

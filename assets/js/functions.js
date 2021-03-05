@@ -77,22 +77,22 @@ jQuery(document).ready(function($) {
 	checkHeader();
 
 
-  $(".cn-revoke-cookie").click(function() {
+  $('.cn-revoke-cookie').on('click', function() {
     setTimeout(function(){ checkHeader(); }, 500);
   });
 
-	$(window).resize(function(e) {
+	$(window).on('resize', function(e) {
 		if ($(window).width() != windowWidth || $(window).height() != windowHeight) {
     	checkHeader();
 		}
 	});
 
-	$(window).on("orientationchange",function(){
+	$(window).on('orientationchange', function() {
   	checkHeader();
 	});
 
   // Toggle
-  $('.is-style-heading-toggle, .is-style-heading-toggle-boxed').click(function() {
+  $('.is-style-heading-toggle, .is-style-heading-toggle-boxed').on('click', function() {
     //$(this).next().toggle('fast').toggleClass('closed');
     $(this).next().toggleClass('closed');
     $(this).toggleClass('closed');
@@ -100,12 +100,12 @@ jQuery(document).ready(function($) {
   });
 
   //Toggle Mobile Nav
-	$('.navi-button').click(function() {
+	$('.navi-button').on('click', function() {
 		$('body').toggleClass('navi-open');
 	});
 
   //Toggle Post List
-  $('.post-list-extended .single-item').click(function() {
+  $('.post-list-extended .single-item').on('click', function() {
     if ( window.innerWidth <= 600 ) {
       var toggleClass = 'mobile';
       var toToggle = $(this).attr('data-mobile-toggle');
@@ -122,10 +122,10 @@ jQuery(document).ready(function($) {
       $(this).addClass('item-active');
       $(toToggle).addClass('content-active').slideToggle('slow');
     }
-  }).mouseover(function() {
+  }).on('mouseover', function() {
     $('.single-item .grayscale').not('.item-active .grayscale').removeClass('grayscale-off');
     $(this).find('.grayscale').removeClass('grayscale-on').addClass('grayscale-off');
-  }).mouseout(function() {
+  }).on('mouseout', function() {
     if ($('.item-active').length == 0) {
       $('.single-item .grayscale').removeClass('grayscale-off').addClass('grayscale-on');
     } else {
@@ -135,12 +135,12 @@ jQuery(document).ready(function($) {
 });
 
 //Window Load Soft Scroll
-$(window).load(function() {
-  checkHeader();
-
+$(window).on('load', function() {
 	$('html').addClass('page-loaded');
+
+  checkHeader();
 });
 
-$(window).scroll(function() {
+$(window).on('scroll', function() {
 	checkHeader();
-}).scroll();
+});

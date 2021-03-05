@@ -5,15 +5,21 @@
 **/ ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<?php do_action( 'inis_b_before_single_post_header' ); ?>
+
 	<header class="post-header">
 	  <h2 class="post-title"><?php the_title(); ?></h2>
 	</header>
+
+	<?php do_action( 'inis_b_after_single_post_header' ); ?>
 
 	<?php if ( has_post_thumbnail() && !has_blocks( $post->post_content ) ) : ?>
 		<div class="post-thumbnail thumbnail">
 			<?php echo get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
 		</div>
 	<?php endif; ?>
+
+	<?php do_action( 'inis_b_before_single_post_content' ); ?>
 
 	<div class="post-content-inner">
 	  <div class="post-wrapper">
@@ -26,6 +32,8 @@
 			<?php inis_b_post_footer(); ?>
 		</div>
 	</div>
+
+	<?php do_action( 'inis_b_after_single_post_content' ); ?>
 
 	<?php if ( 'post' == $post->post_type ) : ?>
 		<div class="post-comment-navi-wrapper">

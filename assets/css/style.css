@@ -694,6 +694,12 @@ blockquote {
 	padding-bottom: 7px;
 }
 
+.post-content ul ol li {
+	text-indent: 0;
+	padding-left: 0;
+	list-style: decimal;
+}
+
 .post-content ul li:before {
 	content: '•';
 	padding-right: 11px;
@@ -731,6 +737,11 @@ blockquote {
 	position: relative;
 	left: 20px;
 	list-style: decimal;
+}
+
+.post-content ol ul li {
+	left: 0;
+	list-style: none;
 }
 
 .sep {
@@ -1571,7 +1582,7 @@ span.wpcf7-list-item .wpcf7-list-item-label {
 #cookie-notice,
 #cookie-notice .cn-button,
 .cn-button {
-	font-family: 'Work Sans', Arial, sans-serif;
+	font-family: 'Work Sans', Arial, sans-serif !important;
 }
 
 #cn-close-notice {
@@ -2365,7 +2376,7 @@ body.font-plex-serif,
 .font-plex-serif #cookie-notice,
 .font-plex-serif #cookie-notice .cn-button,
 .font-plex-serif .cn-button {
-	font-family: 'IBM Plex Serif', Georgia, serif;
+	font-family: 'IBM Plex Serif', Georgia, serif !important;
 }
 
 body.font-plex-mono,
@@ -2388,7 +2399,7 @@ body.font-plex-mono,
 .font-plex-mono #cookie-notice,
 .font-plex-mono #cookie-notice .cn-button,
 .font-plex-mono .cn-button {
-	font-family: 'IBM Plex Mono', Courier, monospaced;
+	font-family: 'IBM Plex Mono', Courier, monospaced !important;
 }
 
 /* ---- Feature Queries: Does not support grid ---- */

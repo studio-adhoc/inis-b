@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.5] - 2021-03-05
+
+### Added
+
+- Tag support for post-list shortcode
+- Add action 'inis_b_before_archive_post_header' in content.php
+- Add action 'inis_b_after_archive_post_header' in content.php
+- Add action 'inis_b_before_archive_post_content' in content.php
+- Add action 'inis_b_after_archive_post_content' in content.php
+- Add action 'inis_b_before_single_post_header' in content-single.php
+- Add action 'inis_b_after_single_post_header' in content-single.php
+- Add action 'inis_b_before_single_post_content' in content-single.php
+- Add action 'inis_b_after_single_post_content' in content-single.php
+- Add action 'inis_b_after_single_post' in single.php
+
+### Changed
+
+- Changed action 'inis_b_after_single_post_content' to 'inis_b_before_single_post' in single.php
+- Consistent use of the_archive_title in archives
+
+### Fixed
+
+- Adjust URL for No JS Stylesheet
+- Adjust custom color styles for Tribe Events Calendar
+- Adjust UL styling in OL
+- Adjust OL styling in UL
+- Adjust jQuery for jQuery 3
+
 ## [1.0.4] - 2021-01-28
 
 ### Changed

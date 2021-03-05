@@ -39,7 +39,7 @@ function inis_b_document_header() {
 <![endif]-->
 
 <noscript>
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/css/style_nojs.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/assets/css/style_nojs.css" type="text/css" media="screen" />
 </noscript>
 
 <?php if (is_customize_preview()) : ?>

@@ -14,9 +14,7 @@
 					<?php the_post(); ?>
 
 					<header>
-						<h3 class="archive-title">
-							<?php printf( __('Author – %s', 'inis-b'), get_the_author() ); ?>
-						</h3>
+						<?php the_archive_title( '<h3 class="archive-title">', '</h3>' ); ?>
 					</header>
 
 					<?php rewind_posts(); ?>
@@ -37,6 +35,8 @@
 
 				<?php else : ?>
 
+					<?php do_action( 'inis_b_before_empty_archive' ); ?>
+
 					<article class="post not-found error-404">
 						<header>
 							<h2 class="post-title"><?php _e( 'Nothing Found', 'inis-b' ); ?></h2>
@@ -46,6 +46,8 @@
 							<p><?php _e('Sorry, but no posts were found.', 'inis-b'); ?></p>
 						</div>
 					</article>
+
+					<?php do_action( 'inis_b_after_empty_archive' ); ?>
 
 				<?php endif; ?>
 			</div>
