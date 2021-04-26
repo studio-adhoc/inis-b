@@ -883,7 +883,8 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 }
 
 .uses-block-editor .wp-block-gallery figcaption,
-.uses-block-editor .wp-block-image figcaption {
+.uses-block-editor .wp-block-image figcaption,
+.uses-block-editor .wp-block-embed figcaption {
 	font-size: 0.875em;
 	margin-top: 0;
 	text-align: center;
@@ -891,7 +892,8 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 }
 
 .uses-block-editor .wp-block-gallery.alignfull figcaption,
-.uses-block-editor .wp-block-image.alignfull figcaption {
+.uses-block-editor .wp-block-image.alignfull figcaption,
+.uses-block-editor .wp-block-embed.alignfull figcaption {
 	padding-left: 18px;
 	padding-right: 18px;
 }
@@ -1556,7 +1558,7 @@ span.wpcf7-list-item .wpcf7-list-item-label {
 .cookie-box,
 .cookie-status {
   border: 1px solid #000;
-  padding: 10px 10px 0;
+  padding: 10px 10px 0 !important;
   margin-bottom: 14px;
 }
 

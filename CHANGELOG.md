@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.6] - 2021-04-26
+
+### Added
+
+- Added styling for embed figcaptions
+
+### Changed
+
+- Changed internal redirect to homepage if website is not active
+
+### Fixed
+
+- Adjust paddings for Cookie Box
+- Adjust styling for em/italic and links in the block editor
+
 ## [1.0.5] - 2021-03-05
 
 ### Added

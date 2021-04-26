@@ -208,7 +208,11 @@ add_action( 'template_redirect', 'custom_redirect' );
 /*-----------------------------------------------------------------------------------*/
 function restrict_admin() {
 	if ( ! current_user_can( 'edit_posts' ) && ! wp_doing_ajax() ) {
-		$internal_url = get_post_type_archive_link( 'internal' );
+		if (get_theme_mod('inis_b_active_website') != '1') {
+			$internal_url = home_url();
+		} else {
+			$internal_url = get_post_type_archive_link( 'internal' );
+		}
     wp_redirect( $internal_url );
     exit;
   }
@@ -218,7 +222,11 @@ add_action( 'admin_init', 'restrict_admin', 1 );
 function inis_b_login_redirect( $redirect_url, $POST_redirect_url, $user ) {
   if ( is_a( $user, 'WP_User' ) ) {
     if ( !$user->has_cap( 'edit_posts' ) && stripos($POST_redirect_url, '/wp-admin') !== false  && stripos($POST_redirect_url, '/uploads') === false) {
-      $redirect_url = get_post_type_archive_link( 'internal' );
+			if (get_theme_mod('inis_b_active_website') != '1') {
+				$redirect_url = home_url();
+			} else {
+				$redirect_url = get_post_type_archive_link( 'internal' );
+			}
     }
   }
   return $redirect_url;

@@ -120,16 +120,16 @@ function inis_b_custom_backend_color_image() {
 
 	if (get_theme_mod('inis_b_theme_color')) {
 		$theme_color = get_theme_mod('inis_b_theme_color');
+		$theme_color_formated = str_replace('#', '', $theme_color);
+		list($r, $g, $b) = sscanf($theme_color_formated, "%02x%02x%02x");
+
 		$output .= "\t.has-inis-b-theme-color-color { color: " . $theme_color . "; }";
 		$output .= "\t.has-inis-b-theme-color-background-color { background-color:" . $theme_color . "; }";
-		$output .= "\t.edit-post-visual-editor .editor-rich-text__tinymce em,
-		.edit-post-visual-editor .editor-rich-text__tinymce italic {
-		  background-size: 1px 1em;
-		  box-shadow:
-		    inset 0 0.1em white,
-		    inset 0 -0.5em " . $theme_color . ";
-		  display: inline;
-		}";
+		if (get_theme_mod('inis_b_underline_light') == 1) {
+			$output .= "\t.edit-post-visual-editor em, .edit-post-visual-editor italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em rgba(" . $r . "," . $g . "," . $b . ",0.4); }";
+		} else {
+			$output .= "\t.edit-post-visual-editor em, .edit-post-visual-editor italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em " . $theme_color . "; }";
+		}
 	}
 
 	if (get_theme_mod('inis_b_theme_header_text_color') && get_theme_mod('inis_b_theme_header_text_color') != 'theme-color' ) {

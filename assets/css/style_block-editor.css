@@ -213,6 +213,21 @@ h2.is-style-heading-toggle-boxed:after {
   top: -0px;
 }
 
+.edit-post-visual-editor a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #a6a6a6;
+}
+
+.edit-post-visual-editor em, .edit-post-visual-editor italic {
+  font-style: normal;
+  background-size: 1px 1em;
+  box-shadow:
+    inset 0 0.1em white,
+    inset 0 -0.5em #e6ff00;
+  display: inline;
+}
+
 .edit-post-visual-editor p,
 .edit-post-visual-editor,
 .blocks-rich-text__tinymce.editor-rich-text__tinymce {
