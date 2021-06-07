@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.7] - 2021-06-07
+
+### Added
+
+- Add open graph customizer inputs for image and description for tribe events post archive
+
+### Changed
+
+- Pluggable function for open graph tag output
+
+### Fixed
+
+- Display Selection when Background is white
+
 ## [1.0.6] - 2021-04-26
 
 ### Added

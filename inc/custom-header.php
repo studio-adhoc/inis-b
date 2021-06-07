@@ -55,62 +55,7 @@ function inis_b_document_header() {
 } ?>
 
 <?php if (!is_internal()) {
-$blog_name = get_bloginfo( 'name' );
-$description = '';
-
-if (is_singular()) {
-	if (get_post_meta($post->ID, 'metadescription', true)) {
-	  $description = get_post_meta($post->ID, 'metadescription', true);
-	} else {
-	  $content = inis_b_get_complete_content($post->ID);
-	  $description = wp_trim_words( $content, 20, '...' );
-	}
-}
-
-$image = '';
-
-if (is_singular()) {
-	if (has_post_thumbnail()) {
-	  $image_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-	  $image = $image_src[0];
-	} elseif( have_rows('content_fields', $post->ID) ) {
-		while ( have_rows('content_fields', $post->ID) ) : the_row();
-			if( get_row_layout() == 'gallery' ) {
-				if ( have_rows('page_gallery') ) :
-					$gal_i = 0;
-					while ( have_rows('page_gallery') ) : the_row();
-						if ( get_sub_field('image') ) {
-							$gal_i++;
-							if ( $gal_i == 1 ) {
-								$image_src = wp_get_attachment_image_src( get_sub_field('image'), 'full' );
-								$image = $image_src[0];
-							}
-						}
-					endwhile;
-				endif;
-			}
-		endwhile;
-	}
-} ?>
-<meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="<?php echo get_locale(); ?>" />
-<meta property="og:url" content="<?php echo get_permalink(); ?>" />
-<?php if ($image != '') : ?>
-<meta property="og:image" content="<?php echo $image; ?>" />
-<?php endif; ?>
-<meta property="og:description" content="<?php echo $description; ?>" />
-<meta property="og:site_name" content="<?php echo $blog_name; ?>" />
-
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:url" content="<?php echo get_permalink(); ?>" />
-<meta name="twitter:title" content="<?php echo wp_get_document_title(); ?>" />
-<meta name="twitter:description" content="<?php echo $description; ?>" />
-<?php if ($image != '') : ?>
-<meta name="twitter:image" content="<?php echo $image; ?>" />
-<?php endif; ?>
-
-<?php
+	inis_b_custom_og_tags($post);
 }
 }
 add_filter( 'wp_head', 'inis_b_document_header');
@@ -142,6 +87,75 @@ function get_custom_title_parts($title) {
 	return $title;
 }
 add_filter( 'document_title_parts', 'get_custom_title_parts', 10, 1 );
+
+/*-----------------------------------------------------------------------------------*/
+/* Plugable: Custom OG Tag Output
+/*-----------------------------------------------------------------------------------*/
+if (!function_exists('inis_b_custom_og_tags')) {
+	function inis_b_custom_og_tags($post) {
+		$blog_name = get_bloginfo( 'name' );
+		$description = '';
+
+		if (is_singular()) {
+			if (get_post_meta($post->ID, 'metadescription', true)) {
+			  $description = get_post_meta($post->ID, 'metadescription', true);
+			} else {
+			  $content = inis_b_get_complete_content($post->ID);
+			  $description = wp_trim_words( $content, 20, '...' );
+			}
+		}
+
+		$image = '';
+
+		if (is_post_type_archive( 'tribe_events' )) {
+	    if (get_theme_mod( 'inis_b_tribe_events_og_image' )) {
+	      $image = get_theme_mod( 'inis_b_tribe_events_og_image' );
+	    }
+	    if (get_theme_mod( 'inis_b_tribe_events_og_description' )) {
+	      $description = get_theme_mod( 'inis_b_tribe_events_og_description' );
+	    }
+	  } elseif (is_singular()) {
+			if (has_post_thumbnail()) {
+			  $image_src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
+			  $image = $image_src[0];
+			} elseif( have_rows('content_fields', $post->ID) ) {
+				while ( have_rows('content_fields', $post->ID) ) : the_row();
+					if( get_row_layout() == 'gallery' ) {
+						if ( have_rows('page_gallery') ) :
+							$gal_i = 0;
+							while ( have_rows('page_gallery') ) : the_row();
+								if ( get_sub_field('image') ) {
+									$gal_i++;
+									if ( $gal_i == 1 ) {
+										$image_src = wp_get_attachment_image_src( get_sub_field('image'), 'full' );
+										$image = $image_src[0];
+									}
+								}
+							endwhile;
+						endif;
+					}
+				endwhile;
+			}
+		} ?>
+		<meta property="og:title" content="<?php echo wp_get_document_title(); ?>" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="<?php echo get_locale(); ?>" />
+		<meta property="og:url" content="<?php echo get_permalink(); ?>" />
+		<?php if ($image != '') : ?>
+		<meta property="og:image" content="<?php echo $image; ?>" />
+		<?php endif; ?>
+		<meta property="og:description" content="<?php echo $description; ?>" />
+		<meta property="og:site_name" content="<?php echo $blog_name; ?>" />
+
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:url" content="<?php echo get_permalink(); ?>" />
+		<meta name="twitter:title" content="<?php echo wp_get_document_title(); ?>" />
+		<meta name="twitter:description" content="<?php echo $description; ?>" />
+		<?php if ($image != '') : ?>
+		<meta name="twitter:image" content="<?php echo $image; ?>" />
+		<?php endif;
+	}
+}
 
 /*-----------------------------------------------------------------------------------*/
 /* Plugable: Custom Header Output

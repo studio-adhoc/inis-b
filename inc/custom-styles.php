@@ -62,8 +62,20 @@ function inis_b_custom_color_image($pageID) {
 			$output .= "\t.a_header { background-color: " . $theme_color . "; }";
 		}
 
-		$output .= "\t::selection { background: " . $theme_color . "; }";
-		$output .= "\t::-moz-selection { background: " . $theme_color . "; }";
+		if ($theme_color == '#ffffff') {
+			$selection_background = '#aaaaaa';
+		} else {
+			$selection_background = $theme_color;
+		}
+
+		if ($theme_color == '#000000') {
+			$selection_text = '#ffffff';
+		} else {
+			$selection_text = '#000000';
+		}
+
+		$output .= "\t::selection { color:  " . $selection_text . "; background: " . $selection_background . "; }";
+		$output .= "\t::-moz-selection { color:  " . $selection_text . "; background: " . $selection_background . "; }";
 		$output .= "\t.a_navi .main li.current-menu-item  > a, .a_navi .main li.current-menu-parent > a, .a_navi .main li.current-menu-ancestor > a, .a_navi .main li.current_page_parent > a { color: " . $theme_color . "; }";
 		$output .= "\t.a_navi .main li.intern > a {  color: #FFF; }";
 		$output .= "\t.has-neon-color, .a_navi .main li:hover > a, .a_navi .main li.intern > a:hover, .a_navi .main a:hover, .navi-button-inner:hover:after, .wp-block-button a:hover, .button a:hover, a.button:hover, a.more-link:hover, button:hover, input[type=submit]:hover, input[type=button]:hover { color: " . $theme_color . "; }";

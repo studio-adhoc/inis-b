@@ -304,6 +304,37 @@ function inis_b_customizer( $wp_customize ) {
     'type'        => 'dropdown-pages',
     'settings'    => 'inis_b_login_internal',
   ));
+
+  // Custom Tribe Events OG Tags
+  $wp_customize->add_setting('inis_b_tribe_events_og_image', array(
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => 'sanitize_image',
+  ));
+
+  $wp_customize->add_control(
+    new WP_Customize_Image_Control(
+    $wp_customize,
+    'inis_b_tribe_events_og_image',
+    array(
+      'label'      => __('Tribe Events OG Image', 'inis-b'),
+      'section'    => 'global_elements',
+      'settings'   => 'inis_b_tribe_events_og_image',
+      'priority'    => 990
+    ) )
+  );
+
+  $wp_customize->add_setting('inis_b_tribe_events_og_description', array(
+    'capability'     => 'edit_theme_options',
+    'sanitize_callback' => 'wp_filter_nohtml_kses',
+  ));
+
+  $wp_customize->add_control('inis_b_tribe_events_og_description', array(
+    'label'      => __('Tribe Events OG Description', 'inis-b'),
+    'section'    => 'global_elements',
+    'type'       => 'text',
+    'settings'   => 'inis_b_tribe_events_og_description',
+    'priority'    => 991
+  ));
 }
 add_action('customize_register', 'inis_b_customizer');
 
