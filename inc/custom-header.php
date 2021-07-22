@@ -13,7 +13,7 @@ function inis_b_scripts() {
 
 	wp_enqueue_style( 'inis-b-style', get_bloginfo('template_directory').'/assets/css/style.css', '','1.' . strtotime(date('Y-m-d H:i')), 'all' );
 
-	if (!is_customize_preview()) {
+	if (!is_customize_preview() && !is_admin()) {
 		wp_enqueue_style( 'inis-b-custom-style', get_bloginfo('template_directory').'/assets/css/style_custom.php', array( 'inis-b-style' ),'1.' . strtotime(date('Y-m-d H:i')), 'all' );
 	}
 

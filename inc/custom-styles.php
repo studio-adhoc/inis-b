@@ -63,7 +63,7 @@ function inis_b_custom_color_image($pageID) {
 		}
 
 		if ($theme_color == '#ffffff') {
-			$selection_background = '#aaaaaa';
+			$selection_background = '#e2e4e7';
 		} else {
 			$selection_background = $theme_color;
 		}

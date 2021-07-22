@@ -96,6 +96,19 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body.is-admin {
+	text-align: left;
+}
+
+body.is-admin .banner {
+	display: none;
+}
+
+body.is-admin .widget {
+	width: 100%;
+	margin-right: 0;
+}
+
 #browser-warning,
 .screen-reader-text,
 .mobile-image, .mobile-content, .desktop-content {
@@ -1052,6 +1065,7 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 
 .wp-block-columns {
 	display: block;
+	box-sizing: content-box;
 }
 
 .wp-block-columns.has-background {
@@ -1105,6 +1119,7 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
   transition: color 0.5s;
   text-align: left;
   word-break: normal;
+	border: 0;
 }
 
 .wp-block-button a:hover {
@@ -1340,6 +1355,7 @@ img.alignright, .post-content div.alignright {
 	display: none;
 }
 
+.widget .wp-block-group__inner-container h3,
 .widget h3.widget-title {
 	font-weight: 600;
   font-size: 1.222em;
@@ -1348,6 +1364,7 @@ img.alignright, .post-content div.alignright {
 	padding-bottom: 10px;
 }
 
+.a_footer .widget .wp-block-group__inner-container h3,
 .a_footer .widget h3.widget-title {
   text-align: center;
 	padding-bottom: 30px;
@@ -2502,6 +2519,7 @@ body.font-plex-mono,
 	/* ---- Spalten ---- */
 	.wp-block-columns {
 		display: flex;
+		box-sizing: content-box;
 	}
 
 	.wp-block-column {

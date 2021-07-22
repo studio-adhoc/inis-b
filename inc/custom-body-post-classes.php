@@ -4,6 +4,9 @@
 /*-----------------------------------------------------------------------------------*/
 function custom_body_class($classes) {
 	global $post, $wp_query;
+	if ( is_admin() ) {
+		$classes[] = 'is-admin';
+	}
 	if ( is_single() && 'post' != get_post_type() ) {
 		$classes[] = 'single-custom-post-type';
 	}

@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.8] - 2021-07-22
+
+### Added
+
+- Added Body Class for Widget Block iFrame
+
+### Changed
+
+- Adjust Content Display in List Views
+
+### Fixed
+
+- Adjust Block Editor Styles to WP 5.8
+
 ## [1.0.7] - 2021-06-07
 
 ### Added
