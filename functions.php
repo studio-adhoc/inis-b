@@ -281,6 +281,18 @@ function get_post_title_link_end($post) {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* Custom Archive Titles
+/*-----------------------------------------------------------------------------------*/
+function inis_b_archive_title($title, $original_title) {
+  if (get_option('page_for_posts') && is_home()) {
+    $title = get_the_title(get_option('page_for_posts'));
+  }
+
+  return $title;
+}
+add_action( 'get_the_archive_title', 'inis_b_archive_title', 10, 2 );
+
+/*-----------------------------------------------------------------------------------*/
 /* Custom Post Types
 /*-----------------------------------------------------------------------------------*/
 function post_type_inis_b() {

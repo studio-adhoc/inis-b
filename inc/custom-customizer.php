@@ -305,6 +305,35 @@ function inis_b_customizer( $wp_customize ) {
     'settings'    => 'inis_b_login_internal',
   ));
 
+  // Custom Posts OG Tags
+  $wp_customize->add_setting('inis_b_posts_og_image', array(
+    'capability'        => 'edit_theme_options',
+    'sanitize_callback' => 'sanitize_image',
+  ));
+
+  $wp_customize->add_control(
+    new WP_Customize_Image_Control(
+    $wp_customize,
+    'inis_b_posts_og_image',
+    array(
+      'label'      => __('Posts Archive OG Image', 'inis-b'),
+      'section'    => 'inis_b_theme_options_section',
+      'settings'   => 'inis_b_posts_og_image'
+    ) )
+  );
+
+  $wp_customize->add_setting('inis_b_posts_og_description', array(
+    'capability'     => 'edit_theme_options',
+    'sanitize_callback' => 'wp_filter_nohtml_kses',
+  ));
+
+  $wp_customize->add_control('inis_b_posts_og_description', array(
+    'label'      => __('Posts Archive OG Description', 'inis-b'),
+    'section'    => 'inis_b_theme_options_section',
+    'type'       => 'text',
+    'settings'   => 'inis_b_posts_og_description',
+  ));
+
   // Custom Tribe Events OG Tags
   $wp_customize->add_setting('inis_b_tribe_events_og_image', array(
     'capability'        => 'edit_theme_options',

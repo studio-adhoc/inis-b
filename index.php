@@ -12,7 +12,7 @@
 
 			<?php if (get_option('page_for_posts')) : ?>
 				<header class="page-header">
-					<h3 class="archive-title"><?php echo get_the_title(get_option('page_for_posts')); ?></h3>
+					<?php the_archive_title( '<h3 class="archive-title">', '</h3>' ); ?>
 				</header>
 			<?php endif; ?>
 

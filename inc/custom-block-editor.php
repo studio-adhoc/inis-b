@@ -3,13 +3,21 @@
 /* Init Block Editor Styles / Scripts
 /*-----------------------------------------------------------------------------------*/
 function inis_b_add_block_editor_assets() {
+	global $pagenow;
+
 	wp_enqueue_style( 'inis-b-block-editor', get_bloginfo('template_directory') . '/assets/css/style_block-editor.css', false );
 	wp_enqueue_style( 'inis-b-block-editor-custom', get_bloginfo('template_directory') . '/assets/css/style_block-editor_custom.php', false );
+
+	$deps = array( 'wp-blocks', 'wp-dom-ready', 'wp-i18n' );
+
+	if( $pagenow !== 'widgets.php' ) {
+		$deps[] = 'wp-edit-post';
+	}
 
 	wp_enqueue_script(
 		'inis-b-editor',
 		get_bloginfo('template_directory') . '/assets/js/functions_block-editor.js',
-		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post', 'wp-i18n' ),
+		$deps,
 		'1.0.0'
 	);
 
@@ -105,7 +113,8 @@ add_action( 'after_setup_theme', 'inis_b_setup_theme_supported_features' );
 /*-----------------------------------------------------------------------------------*/
 /* Remove Blocks from CPT
 /*-----------------------------------------------------------------------------------*/
-function inis_b_editor_allowed_block_types( $allowed_block_types, $post ) {
+function inis_b_editor_allowed_block_types( $allowed_block_types, $block_editor_context ) {
+	$post = $block_editor_context->post;
 	$restricted_cpt = apply_filters('inis_b_blockeditor_restricted_cpt', array('member','project'));
 
 	$block_types_restricted_cpt = apply_filters('inis_b_block_types_restricted_cpt', array(
@@ -124,4 +133,4 @@ function inis_b_editor_allowed_block_types( $allowed_block_types, $post ) {
 
   return $allowed_block_types;
 }
-add_filter( 'allowed_block_types', 'inis_b_editor_allowed_block_types', 10, 2 );
+add_filter( 'allowed_block_types_all', 'inis_b_editor_allowed_block_types', 10, 2 );

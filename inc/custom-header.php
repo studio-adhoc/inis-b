@@ -107,7 +107,14 @@ if (!function_exists('inis_b_custom_og_tags')) {
 
 		$image = '';
 
-		if (is_post_type_archive( 'tribe_events' )) {
+		if (is_home()) {
+	    if (get_theme_mod( 'inis_b_posts_og_image' )) {
+	      $image = get_theme_mod( 'inis_b_posts_og_image' );
+	    }
+	    if (get_theme_mod( 'inis_b_posts_og_description' )) {
+	      $description = get_theme_mod( 'inis_b_posts_og_description' );
+	    }
+	  } elseif (is_post_type_archive( 'tribe_events' )) {
 	    if (get_theme_mod( 'inis_b_tribe_events_og_image' )) {
 	      $image = get_theme_mod( 'inis_b_tribe_events_og_image' );
 	    }
