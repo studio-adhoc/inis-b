@@ -750,6 +750,7 @@ blockquote {
 	position: relative;
 	left: 20px;
 	list-style: decimal;
+  width: 96%;
 }
 
 .post-content ol ul li {
@@ -1330,6 +1331,16 @@ img.alignright, .post-content div.alignright {
   padding-bottom: 75%;
 }
 
+.cookies-accepted .wp-block-embed.is-type-wp-embed .wp-block-embed__wrapper {
+	height: 365px;
+	overflow: visible;
+	padding-bottom: 0;
+}
+
+.cookies-accepted .wp-block-embed__wrapper .wp-embedded-content {
+	position: static;
+}
+
 /* ---- Widgets ---- */
 .recentcomments a{
 	display:inline !important;
@@ -1827,6 +1838,11 @@ hr.wp-block-separator.alignfull {
 
 .list .list-item .page {
 	padding: 40px 0 100px;
+}
+
+/* ---- Project List ---- */
+.project-list .list-item {
+	padding: 0 0 30px;
 }
 
 /* ---- Subpages List ---- */
@@ -2775,6 +2791,18 @@ body.font-plex-mono,
 	.post-list-extended .last-item {
 		margin-right: 0;
 	}
+}
+
+/* ---- Media Queries: Bigger than 600px, Smaller than 782px ---- */
+@media (min-width:600px) and (max-width:781px) {
+  .wp-block-column:not(:only-child) {
+    flex-basis: 100% !important;
+    flex-grow: 1;
+  }
+
+  .wp-block-column:nth-child(2n) {
+    margin-left: 0;
+  }
 }
 
 /* ---- Media Queries: Bigger than 768px ---- */

@@ -58,7 +58,7 @@
 					<a href="<?php echo get_post_meta(get_the_ID(), 'member_link', true); ?>" target="_blank"><?php _e('Website', 'inis-b'); ?></a>
 				</p>
 				<?php endif; ?>
-				<?php wp_link_pages( array( 'before' => __('<div class="page-link">Pages: ', 'inis-b'), 'after' => '</div>' ) ); ?>
+				<?php // wp_link_pages( array( 'before' => __('<div class="page-link">Pages: ', 'inis-b'), 'after' => '</div>' ) ); ?>
 			</div>
 			<?php endif; ?>
 
