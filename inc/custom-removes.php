@@ -33,6 +33,14 @@ function remove_recent_comments_style() {
 add_action('widgets_init', 'remove_recent_comments_style');
 
 /*-----------------------------------------------------------------------------------*/
+/* Dequeue Global Styles */
+/*-----------------------------------------------------------------------------------*/
+function inis_b_dequeue_unnecessary_styles() {
+	wp_dequeue_style( 'global-styles' );
+}
+add_action( 'wp_print_styles', 'inis_b_dequeue_unnecessary_styles', 100 );
+
+/*-----------------------------------------------------------------------------------*/
 /* Remove Comments from Pages
 /*-----------------------------------------------------------------------------------*/
 function remove_comments_on_pages() {

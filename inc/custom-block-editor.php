@@ -116,6 +116,18 @@ add_action( 'after_setup_theme', 'inis_b_setup_theme_supported_features' );
 function inis_b_editor_allowed_block_types( $allowed_block_types, $block_editor_context ) {
 	$post = $block_editor_context->post;
 	$restricted_cpt = apply_filters('inis_b_blockeditor_restricted_cpt', array('member','project'));
+	
+	$block_types = WP_Block_Type_Registry::get_instance()->get_all_registered();
+
+  if (!empty($block_types)) {
+    $allowed_block_types = array();
+
+    foreach ($block_types as $key => $value) {
+      if ($value->category != 'theme') {
+        $allowed_block_types[] = $key;
+      }
+    }
+  }
 
 	$block_types_restricted_cpt = apply_filters('inis_b_block_types_restricted_cpt', array(
 		'core/paragraph',
