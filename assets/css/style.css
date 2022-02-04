@@ -1583,6 +1583,10 @@ span.wpcf7-list-item .wpcf7-list-item-label {
 }
 
 /* ---- Cookie Notice ---- */
+.BorlabsCookie {
+	text-align: left;
+}
+
 .cookie-box,
 .cookie-status {
   border: 1px solid #000;

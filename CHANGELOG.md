@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.12] - 2022-02-04
+
+### Added
+
+- Added style for Borlabs Cookies
+
+### Changed
+
+- Removed dependence on Cookie Notice Plugin
+
+### Fixed
+
+- Fixed thickbox js for refactored block galleries
+
 ## [1.0.11] - 2022-01-27
 
 ### Changed

@@ -102,7 +102,7 @@ function inis_b_custom_content_filter($content) {
 
     $output = '';
 
-		if (!function_exists('cn_cookies_accepted') || !cn_cookies_accepted()) {
+		if (function_exists('cn_cookies_accepted') && !cn_cookies_accepted()) {
 			$pattern = '~<iframe.*</iframe>|<embed.*</embed>~';
 		  preg_match_all($pattern, $content, $matches);
 

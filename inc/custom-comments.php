@@ -3,9 +3,8 @@
 /* Removes Cookie Consent Checkbox if Cookies are not accepted
 /*-----------------------------------------------------------------------------------*/
 function custom_cookies_field($field) {
-  if (function_exists('cn_cookies_accepted') && !cn_cookies_accepted()) {
-    $field = '';
-  }
+  $field = '';
+
   return $field;
 }
 add_filter('comment_form_field_cookies','custom_cookies_field');
