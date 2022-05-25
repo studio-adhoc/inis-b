@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 	$('html').removeClass('no-js').addClass('js-active');
   $('img').parent('a').addClass('contains-image');
   $('.wp-block-gallery a').each(function( index ) {
-    if ($(this).attr('href') === $('img', this).attr('src')) {
+    if ($(this).attr('href').indexOf('/wp-content/uploads') >= 0) {
       $(this).addClass('thickbox').attr('rel','wp-block-gallery');
     }
   });

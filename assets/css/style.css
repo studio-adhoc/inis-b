@@ -2540,14 +2540,11 @@ body.font-plex-mono,
 	.wp-block-columns {
 		display: flex;
 		box-sizing: content-box;
+		gap: 2em;
 	}
 
 	.wp-block-column {
 		flex-basis: auto;
-	}
-
-	.wp-block-column:not(:first-child) {
-		margin-left: 32px;
 	}
 
 	.col-2 {

@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.13] - 2022-05-25
+
+### Fixed
+
+- Fixed Block Editor Columns Gap
+- Fixed thickbox js for refactored block galleries
+
 ## [1.0.12] - 2022-02-04
 
 ### Added
