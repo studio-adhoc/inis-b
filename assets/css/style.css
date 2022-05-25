@@ -2473,7 +2473,7 @@ body.font-plex-mono,
 
 /* ---- Media Queries: Smaller than 782px ---- */
 @media (max-width: 782px) {
-	.wp-block-column {
+	.wp-block-columns {
 		gap: 0 !important;
 	}
 }
