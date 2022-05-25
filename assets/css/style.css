@@ -2471,6 +2471,13 @@ body.font-plex-mono,
 	}
 }
 
+/* ---- Media Queries: Smaller than 782px ---- */
+@media (max-width: 782px) {
+	.wp-block-column {
+		gap: 0 !important;
+	}
+}
+
 /* ---- Media Queries: Bigger than 600px ---- */
 @media (min-width: 601px) {
 	body {
@@ -2540,7 +2547,6 @@ body.font-plex-mono,
 	.wp-block-columns {
 		display: flex;
 		box-sizing: content-box;
-		gap: 2em;
 	}
 
 	.wp-block-column {
@@ -2851,6 +2857,7 @@ body.font-plex-mono,
 	.wp-block-column {
 		width: 48%;
 		width: calc(50% - 16px);
+		gap: 2em;
 	}
 
 	.col-25-75 .wp-block-column:first-child {
