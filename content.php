@@ -44,10 +44,14 @@
 						the_excerpt();
 						echo apply_filters( 'inis_b_read_more_button', '<a href="' . get_permalink(get_the_ID()) . '#more-' . get_the_ID() . '" class="more-link">' . __('Read more >', 'inis-b') . '</a>' );
 					} else {
-						//echo apply_filters( 'the_content', get_the_content() );
-						$content = wp_strip_all_tags(get_the_content());
-						echo '<p>' . wp_trim_words( $content, 35 ) . '</p>';
-						echo apply_filters( 'inis_b_read_more_button', '<a href="' . get_permalink(get_the_ID()) . '#more-' . get_the_ID() . '" class="more-link">' . __('Read more >', 'inis-b') . '</a>' );
+						$pt_obj = get_post_type_object( $post->post_type );
+						if ($pt_obj->public != 1) {
+							echo apply_filters( 'the_content', get_the_content() );
+						} else {
+							$content = wp_strip_all_tags(get_the_content());
+							echo '<p>' . wp_trim_words( $content, 35 ) . '</p>';
+							echo apply_filters( 'inis_b_read_more_button', '<a href="' . get_permalink(get_the_ID()) . '#more-' . get_the_ID() . '" class="more-link">' . __('Read more >', 'inis-b') . '</a>' );
+						}
 					}
 				} else {
 					the_excerpt();

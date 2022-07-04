@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.16] - 2022-07-04
+
+### Changed
+
+- Adjust Content Display in List Views when Post Type is not public
+
+### Fixed
+
+- Fixed TEC Add to calendar dropdown display
+
 ## [1.0.15] - 2022-05-25
 
 ### Fixed
