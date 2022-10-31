@@ -2123,6 +2123,18 @@ h2.tribe-events-schedule__datetime {
 	display: none;
 }
 
+.single-tribe_events .tribe-events .tribe-events-c-subscribe-dropdown__container,
+.tribe-block__events-link .tribe-events .tribe-events-c-subscribe-dropdown__container,
+.single-tribe_events .tribe-events-c-subscribe-dropdown__button,
+.tribe-block__events-link .tribe-events-c-subscribe-dropdown__button {
+  width: 270px;
+}
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown__export-icon,
+.tribe-block__events-link .tribe-events-c-subscribe-dropdown__export-icon {
+	fill: currentColor;
+}
+
 /* ---- Member List ---- */
 .member-list .single-item {
   padding-bottom: 50px;

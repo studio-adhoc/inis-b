@@ -133,6 +133,10 @@ body.block-editor-page .editor-default-block-appender {
 	max-width: 1100px !important;
 }
 
+.wp-block-legacy-widget__edit-preview iframe {
+  height: 100% !important;
+}
+
 .editor-styles-wrapper {
   font-family: 'Work Sans', Arial, sans-serif !important;
 }

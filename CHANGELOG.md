@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.17] - 2022-10-31
+
+### Fixed
+
+- Fixed TEC Add to calendar dropdown display again after translation
+- Fixed Legacy Widgets Preview iframe height
+
 ## [1.0.16] - 2022-07-04
 
 ### Changed
