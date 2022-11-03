@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.18] - 2022-11-03
+
+### Fixed
+
+- Missing Global Styles for WP 6.1
+- Button CSS for Block Editor Admin
+
 ## [1.0.17] - 2022-10-31
 
 ### Fixed

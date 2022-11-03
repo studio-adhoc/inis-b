@@ -475,11 +475,13 @@ h2.is-style-heading-toggle-boxed:after {
 }
 
 /* Button */
+.editor-styles-wrapper .wp-block-button__link,
 .wp-block-button .wp-block-button__link {
   font-weight: 600;
-	padding: 5px 12px;
+  font-size: inherit !important;
+	padding: 5px 12px !important;
 	margin: 14px 0 14px;
-  border-radius: 0;
+  border-radius: 0 !important;
   background-color: #000;
 }
 
