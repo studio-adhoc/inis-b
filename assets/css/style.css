@@ -787,6 +787,22 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 
 /* ---- Block Editor Additions ---- */
 /* ---- Block Editor 6.1 ---- */
+.is-small-text,
+.has-small-font-size {
+	font-size: 0.813rem;
+}
+.is-medium-text,
+.has-medium-font-size {
+	font-size: 1.25rem;
+}
+.is-large-text,
+.has-large-font-size {
+	font-size: 2.25rem;
+}
+.is-larger-text,
+.has-larger-font-size {
+	font-size: 2.625rem;
+}
 .wp-block-image {
   margin-bottom: 1em;
 }
