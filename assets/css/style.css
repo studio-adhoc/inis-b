@@ -1125,9 +1125,13 @@ body .is-layout-flex > * {
   margin-bottom: 0;
 }
 
-.has-background .wp-block-column :last-child {
+.has-background .wp-block-column :last-child:not(.wp-block-button__link) {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.has-background .wp-block-column .wp-block-button__link:last-child {
+  margin-bottom: 0;
 }
 
 .wp-block-columns {

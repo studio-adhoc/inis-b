@@ -73,6 +73,11 @@ jQuery(document).ready(function($) {
       $(this).addClass('thickbox').attr('rel','wp-block-gallery');
     }
   });
+  $('.wp-block-image a').each(function( index ) {
+    if ($(this).attr('href').indexOf('/wp-content/uploads') >= 0) {
+      $(this).addClass('thickbox');
+    }
+  });
   $('.is-style-heading-toggle, .is-style-heading-toggle-boxed').addClass('toggle-headline closed').append('<span class="clear line"></span>');
   $('.is-style-heading-toggle + .wp-block-group, .is-style-heading-toggle-boxed + .wp-block-group').addClass('toggle-content closed');
 

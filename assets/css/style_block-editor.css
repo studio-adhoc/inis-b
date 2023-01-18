@@ -126,6 +126,10 @@
 
 @font-face {font-family: 'UI Icons';font-weight: normal;font-style: normal;src: url('../fonts/ui-icons/ui-icons.eot');src: url('../fonts/ui-icons/ui-icons.eot?#iefix') format('embedded-opentype'),url('../fonts/ui-icons/ui-icons.woff2') format('woff2'),url('../fonts/ui-icons/ui-icons.woff') format('woff');}
 
+:root {
+  --tec-font-family-sans-serif: 'Work Sans', Arial, sans-serif !important;
+}
+
 body.block-editor-page .editor-post-title__block,
 body.block-editor-page .editor-default-block-appender {
 	color: #000;

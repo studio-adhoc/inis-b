@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.20] - 2023-01-18
+
+### Added
+
+- Automatic Thickbox support for images linked to the media file
+- TECs Sans Serif Font for the block editor
+
+### Fixed
+
+- Made second parameter in function "get_cpt_category" optional
+- Adjust padding for Buttons if last-child in column
+
 ## [1.0.19] - 2022-11-04
 
 ### Fixed

@@ -617,7 +617,7 @@ function get_project_category($sep = ' ', $pID = false) {
 	return get_cpt_category($sep, 'project-category',$pID);
 }
 
-function get_cpt_category($sep = ' ', $tax, $pID = false) {
+function get_cpt_category($sep = ' ', $tax = 'category', $pID = false) {
 	$output = '';
 
 	if ($pID) {
