@@ -577,7 +577,8 @@ function post_list_default_atts() {
     'letter_header' => '',
     'offset_header' => '',
     'get_offset_varname' => 'letter',
-    'offset_archive_link' => ''
+    'offset_archive_link' => '',
+    'empty_text' => ''
 	);
 
   return $atts;
@@ -844,12 +845,14 @@ function post_list( $atts ) {
                 $ret = ob_get_contents();
                 ob_end_clean();
 
-                $output .=  $ret;
+                $output .=  apply_filters('inis_b_post_list_sc_content', $ret, $atts);
               }
             $output .= '</div>';
 
           endwhile;
           $output .= '</div>';
+        } elseif($atts['empty_text'] != '') {
+          $output .= '<p>' . $atts['empty_text'] . '</p>';
         }
 
         wp_reset_query();

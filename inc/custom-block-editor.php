@@ -111,6 +111,18 @@ function inis_b_setup_theme_supported_features() {
 add_action( 'after_setup_theme', 'inis_b_setup_theme_supported_features' );
 
 /*-----------------------------------------------------------------------------------*/
+/* Remove Openverse Tab
+/*-----------------------------------------------------------------------------------*/
+add_filter(
+	'block_editor_settings_all',
+	function( $settings ) {
+	  $settings['enableOpenverseMediaCategory'] = false;
+	  return $settings;
+	},
+	10
+); 
+
+/*-----------------------------------------------------------------------------------*/
 /* Remove Blocks from CPT
 /*-----------------------------------------------------------------------------------*/
 function inis_b_editor_allowed_block_types( $allowed_block_types, $block_editor_context ) {
