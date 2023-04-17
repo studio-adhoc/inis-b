@@ -568,6 +568,7 @@ function post_list_default_atts() {
     'cat' => '',
     'tag' => '',
     'exclude_cat' => '',
+    'post__in' => '',
 		'posts_per_page' => -1,
     'layout' => 'post-list',
     'only_partner_posts' => '',
@@ -730,6 +731,12 @@ function post_list( $atts ) {
             'terms'    => $term_array,
             'operator' => 'NOT IN',
           );
+        }
+
+        if ($atts['post__in'] != '') {
+          $post_ids = explode(',', $atts['post__in']);
+          $args['post__in'] = $post_ids;
+          $args['orderby'] = 'post__in';
         }
 
         $loop = new WP_Query( $args );

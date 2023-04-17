@@ -24,6 +24,11 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
 /*-----------------------------------------------------------------------------------*/
+/* Disable CPTs und Taxomies in ACF
+/*-----------------------------------------------------------------------------------*/
+add_filter( 'acf/settings/enable_post_types', '__return_false' );
+
+/*-----------------------------------------------------------------------------------*/
 /* Remove Recent Comment Inline CSS
 /*-----------------------------------------------------------------------------------*/
 function remove_recent_comments_style() {

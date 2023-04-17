@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.22] - 2023-04-17
+
+### Added
+
+- Disable CPTs und Taxomies in ACF
+
+### Fixed
+
+- Adjust width class in Block Editor
+
 ## [1.0.21] - 2023-03-30
 
 ### Added
