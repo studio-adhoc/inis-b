@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.24] - 2023-07-12
+
+### Added
+
+- Plugable Function for inis_b_get_complete_content
+- Post List Parameter for Content Display
+
 ## [1.0.23] - 2023-05-04
 
 ### Fixed

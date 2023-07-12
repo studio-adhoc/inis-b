@@ -244,17 +244,19 @@ if (!function_exists('inis_b_footer')) {
 add_filter( 'wp_footer', 'inis_b_footer');
 
 /*-----------------------------------------------------------------------------------*/
-/* Get complete content
+/* Plugable: Get complete content
 /*-----------------------------------------------------------------------------------*/
-function inis_b_get_complete_content($postID) {
-  $output = '';
+if (!function_exists('inis_b_get_complete_content')) {
+	function inis_b_get_complete_content($postID) {
+		$output = '';
 
-  $post_complete = get_post($postID);
-  $output .= apply_filters('the_content', $post_complete->post_content);
+		$post_complete = get_post($postID);
+		$output .= apply_filters('the_content', $post_complete->post_content);
+		
+		$output = wp_strip_all_tags($output);
+		$output = preg_replace('#<[^>]+>#', ' ', $output);
+		$output = str_replace('"', '', $output);
 
-	$output = wp_strip_all_tags($output);
-  $output = preg_replace('#<[^>]+>#', ' ', $output);
-	$output = str_replace('"', '', $output);
-
-  return $output;
+		return $output;
+	}
 }

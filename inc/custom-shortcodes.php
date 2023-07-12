@@ -579,7 +579,8 @@ function post_list_default_atts() {
     'offset_header' => '',
     'get_offset_varname' => 'letter',
     'offset_archive_link' => '',
-    'empty_text' => ''
+    'empty_text' => '',
+    'display_content' => ''
 	);
 
   return $atts;
@@ -842,13 +843,13 @@ function post_list( $atts ) {
                 }
                 ob_start();
                 $part = 'content';
-                if ($args['post_type'] == 'page' && isset($args['p'])) {
+                if ($args['post_type'] == 'page' && $atts['display_content'] == 'full' && isset($args['p'])) {
                   $part = 'page';
                 }
-  		          if ($args['post_type'] == 'post' && isset($args['p'])) {
+  		          if ($args['post_type'] == 'post' && $atts['display_content'] == 'full' && isset($args['p'])) {
                   $part = 'single';
                 }
-                get_template_part( 'content' );
+                get_template_part( 'content', $part );
                 $ret = ob_get_contents();
                 ob_end_clean();
 
