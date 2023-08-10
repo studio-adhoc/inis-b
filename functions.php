@@ -67,6 +67,11 @@ add_filter( 'upload_mimes', 'custom_mime' );
 add_filter( 'acf/settings/enable_post_types', '__return_false' );
 
 /*-----------------------------------------------------------------------------------*/
+/* Disable OPtions Pages in ACF 
+/*-----------------------------------------------------------------------------------*/
+add_filter( 'acf/settings/enable_options_pages_ui', '__return_false' );
+
+/*-----------------------------------------------------------------------------------*/
 /* Init Widget Areas
 /*-----------------------------------------------------------------------------------*/
 function widgets_init() {
