@@ -1,5 +1,19 @@
 <?php
 /*-----------------------------------------------------------------------------------*
+/* Get Global Styles
+/*-----------------------------------------------------------------------------------*/
+add_action( 'inis_b_global_styles', 'inis_b_global_styles' );
+function inis_b_global_styles() {
+	$output = '';
+
+	if (function_exists('wp_get_global_stylesheet')) {
+		$output .= wp_get_global_stylesheet();
+	}
+
+	echo $output;
+}
+
+/*-----------------------------------------------------------------------------------*
 /* Get Custom Styles
 /*-----------------------------------------------------------------------------------*/
 function inis_b_custom_color_image($pageID) {
