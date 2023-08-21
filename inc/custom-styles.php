@@ -26,30 +26,35 @@ function inis_b_custom_color_image($pageID) {
 	if (get_theme_mod('inis_b_theme_header_text_color') && get_theme_mod('inis_b_theme_header_text_color') != 'theme-color' ) {
 		$output .= "\t.has-inis-b-theme-header-text-color-color { color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
 		$output .= "\t.has-inis-b-theme-header-text-color-background-color { background-color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-header-text-color-background-color { border-color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
 		$output .= "\t.a_header { color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_header_background_color') && get_theme_mod('inis_b_theme_header_background_color') != 'theme-color') {
 		$output .= "\t.has-inis-b-theme-header-background-color-color { color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
 		$output .= "\t.has-inis-b-theme-header-background-color-background-color { background-color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-header-background-color-background-color { border-color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
 		$output .= "\t.a_header { background-color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_button_color') && get_theme_mod('inis_b_theme_button_color') != '#000000') {
 		$output .= "\t.has-inis-b-theme-button-color-color { color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 		$output .= "\t.has-inis-b-theme-button-color-background-color { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-button-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 		$output .= "\t.button a, a.button, a.more-link, a.tribe-events-read-more, .tribe-block__event-website a, .wp-block-button__link, button, input[type=submit], input[type=button] { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_color')) {
 		$output .= "\t.has-inis-b-theme-navi-color-color { color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
 		$output .= "\t.has-inis-b-theme-navi-color-background-color { background-color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-navi-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
 		$output .= "\t.a_navi { background-color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_button_color') && get_theme_mod('inis_b_theme_navi_button_color') != '#000000') {
 		$output .= "\t.has-inis-b-theme-navi-button-color-color { color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
 		$output .= "\t.has-inis-b-theme-navi-button-color-background-color { background-color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-navi-button-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
 		$output .= "\t.a_navi .main li a, .navi-button-inner:after { background-color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
 		$output .= "\t.a_navi .main .menu-social-navigation-container li a, .a_navi .main .menu-social-navigation-container li a:hover, .a_navi .main .menu-social-navigation-container li a:after { color: " . get_theme_mod('inis_b_theme_navi_button_color') . " !important; }";
 	}
@@ -58,6 +63,7 @@ function inis_b_custom_color_image($pageID) {
 		$output .= "\t.banner .banner-text, .internal-header { background-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 		$output .= "\t.has-inis-b-theme-banner-color-color { color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 		$output .= "\t.has-inis-b-theme-banner-color-background-color { background-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-banner-color-background-color { border-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 		if (get_theme_mod('inis_b_theme_banner_color_for_navi_button_hover') == 1) {
 			$output .= "\t.a_navi .main li a:hover, .a_navi .main .current-menu-item a, .a_navi .main .current-menu-item li a:hover, .navi-button-inner:hover:after, .button a:hover, a.button:hover, a.more-link:hover, a.tribe-events-read-more:hover, .wp-block-button__link:hover, button:hover, input[type=submit]:hover, input[type=button]:hover { background-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 			$output .= "\t.a_navi .main .menu-social-navigation-container li a:hover:after { color: " . get_theme_mod('inis_b_theme_banner_color') . " !important; }";
@@ -98,6 +104,7 @@ function inis_b_custom_color_image($pageID) {
 		$output .= "\t.has-neon-background-color, .member-list-compact .list-item { background-color: " . $theme_color . "; }";
 		$output .= "\t.has-inis-b-theme-color-color { color: " . $theme_color . "; }";
 		$output .= "\t.has-inis-b-theme-color-background-color { background-color: " . $theme_color . "; }";
+		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-color-background-color { border-color: " . $theme_color  . "; }";
 		$output .= "\t.wp-block-button a.has-inis-b-theme-color-background-color:hover { color: #000; }";
 
 		$output .= "\t.n2g_embed_signup button:hover { color: " . $theme_color . " !important; }";
@@ -161,31 +168,37 @@ function inis_b_custom_backend_color_image() {
 	if (get_theme_mod('inis_b_theme_header_text_color') && get_theme_mod('inis_b_theme_header_text_color') != 'theme-color' ) {
 		$output .= "\t.has-inis-b-theme-header-text-color-color { color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
 		$output .= "\t.has-inis-b-theme-header-text-color-background-color { background-color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-header-text-color-background-color { border-color: " . get_theme_mod('inis_b_theme_header_text_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_header_background_color') && get_theme_mod('inis_b_theme_header_background_color') != 'theme-color') {
 		$output .= "\t.has-inis-b-theme-header-background-color-color { color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
 		$output .= "\t.has-inis-b-theme-header-background-color-background-color { background-color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-header-background-color-background-color { border-color: " . get_theme_mod('inis_b_theme_header_background_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_button_color') && get_theme_mod('inis_b_theme_button_color') != '#000000') {
 		$output .= "\t.has-inis-b-theme-button-color-color { color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 		$output .= "\t.has-inis-b-theme-button-color-background-color { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-button-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_color')) {
 		$output .= "\t.has-inis-b-theme-navi-color-color { color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
 		$output .= "\t.has-inis-b-theme-navi-color-background-color { background-color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-navi-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_navi_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_button_color') && get_theme_mod('inis_b_theme_navi_button_color') != '#000000') {
 		$output .= "\t.has-inis-b-theme-navi-button-color-color { color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
 		$output .= "\t.has-inis-b-theme-navi-button-color-background-color { background-color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-navi-button-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_navi_button_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_banner_color')) {
 		$output .= "\t.has-inis-b-theme-banner-color-color { color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 		$output .= "\t.has-inis-b-theme-banner-color-background-color { background-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
+		$output .= "\t.is-style-box-group.has-inis-b-theme-banner-color-background-color { border-color: " . get_theme_mod('inis_b_theme_banner_color') . "; }";
 	}
 
 	return apply_filters('inis_b_custom_backend_color_css_output', $output);

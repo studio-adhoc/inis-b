@@ -160,6 +160,15 @@ div[data-type="core/button"] div[data-block] {
 .is-style-box-group {
   border: 1px solid #000;
   padding: 10px 10px 0;
+  background-color: transparent !important;
+}
+
+.is-style-box-group.has-gray-background-color {
+  border: 1px solid #727477;
+}
+
+.is-style-box-group.has-white-background-color {
+  border: 1px solid #FFFFFF;
 }
 
 .is-style-paragraph-boxed,

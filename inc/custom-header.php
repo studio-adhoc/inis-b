@@ -3,7 +3,7 @@
 /* Enqueue CSS and JS
 /*-----------------------------------------------------------------------------------*/
 function inis_b_scripts() {
-	wp_enqueue_style( 'inis-b-global-style', get_bloginfo('template_directory').'/assets/css/style_global.php', array(),'', 'all' );
+	wp_enqueue_style( 'inis-b-global-style', get_bloginfo('template_directory').'/assets/css/style_global.php', '','', 'all' );
 	
 	if (get_theme_mod('inis_b_theme_font') == 'plex-serif' ) {
 		wp_enqueue_style( 'inis-b-fonts', get_bloginfo('template_directory').'/assets/css/font-serif.css', '','1.' . strtotime(date('Y-m-d H:i')), 'all' );
@@ -13,7 +13,7 @@ function inis_b_scripts() {
 		wp_enqueue_style( 'inis-b-fonts', get_bloginfo('template_directory').'/assets/css/font-sans.css', '','1.' . strtotime(date('Y-m-d H:i')), 'all' );
 	}
 
-	wp_enqueue_style( 'inis-b-style', get_bloginfo('template_directory').'/assets/css/style.css', '','1.' . strtotime(date('Y-m-d H:i')), 'all' );
+	wp_enqueue_style( 'inis-b-style', get_bloginfo('template_directory').'/assets/css/style.css', array('inis-b-global-style'),'1.' . strtotime(date('Y-m-d H:i')), 'all' );
 
 	if (!is_customize_preview() && !is_admin()) {
 		wp_enqueue_style( 'inis-b-custom-style', get_bloginfo('template_directory').'/assets/css/style_custom.php', array( 'inis-b-style' ),'1.' . strtotime(date('Y-m-d H:i')), 'all' );

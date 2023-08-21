@@ -885,6 +885,15 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 .post-content .is-style-box-group {
   border: 1px solid #000;
   padding: 10px 10px 0;
+  background-color: transparent !important;
+}
+
+.post-content .is-style-box-group.has-gray-background-color {
+	border: 1px solid #727477;
+}
+  
+.post-content .is-style-box-group.has-white-background-color {
+	border: 1px solid #FFFFFF;
 }
 
 .uses-block-editor .has-normal-font-size, .uses-block-editor .has-regular-font-size {
