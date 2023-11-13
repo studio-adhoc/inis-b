@@ -104,22 +104,24 @@ var inis_b_supports = (function () {
   function addBlockSupports(settings, name) {
     //console.log(name, settings.supports);
 
-    switch (name) {
-      case 'core/heading':
-        return lodash.assign( {}, settings, {
-          supports: lodash.assign( {}, settings.supports, {
-            align: [ 'full', 'wide' ]
-          } ),
-        } );
-      case 'core/separator':
-        return lodash.assign( {}, settings, {
-          supports: lodash.assign( {}, settings.supports, {
-            align: [ 'full', 'wide' ]
-          } ),
-        } );
-      default:
-        return settings;
-    }
+    // Bail early if the block does not have supports.
+		if ( ! settings?.supports ) {
+			return settings;
+		}
+
+		// Only apply to certain blocks.
+		if (
+			name === 'core/heading' ||
+			name === 'core/separator' 
+		) {
+			return Object.assign( {}, settings, {
+				supports: Object.assign( settings.supports, {
+					align: [ 'full', 'wide' ]
+				} ),
+			} );
+		}
+
+		return settings;
   }
 
 	return {

@@ -41,7 +41,7 @@ function inis_b_custom_color_image($pageID) {
 		$output .= "\t.has-inis-b-theme-button-color-color { color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 		$output .= "\t.has-inis-b-theme-button-color-background-color { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 		$output .= "\t.post-content .is-style-box-group.has-inis-b-theme-button-color-background-color  { border-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
-		$output .= "\t.button a, a.button, a.more-link, a.tribe-events-read-more, .tribe-block__event-website a, .wp-block-button__link, button, input[type=submit], input[type=button] { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
+		$output .= "\t.button a, a.button, a.more-link, a.tribe-events-read-more, .tribe-block__event-website a, .wp-block-button:not(.has-custom-font-size) .wp-block-button__link, button, input[type=submit], input[type=button] { background-color: " . get_theme_mod('inis_b_theme_button_color') . "; }";
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_color')) {

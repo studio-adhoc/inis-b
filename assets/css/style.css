@@ -925,6 +925,11 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
   margin-bottom: 1em;
 }
 
+.uses-block-editor .post-content div.wp-block-image figure.alignleft img,
+.uses-block-editor .post-content div.wp-block-image figure.alignright img {
+  margin-bottom: 0;
+}
+
 .uses-block-editor .wp-block-gallery figcaption,
 .uses-block-editor .wp-block-image figcaption,
 .uses-block-editor .wp-block-embed figcaption {

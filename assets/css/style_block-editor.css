@@ -409,7 +409,7 @@ html :where(.wp-block)[data-align="full"],
 	position: relative;
 }
 
-.edit-post-visual-editor ul > li:before {
+.edit-post-visual-editor ul:not(.acf-tab-group) > li:before {
 	content: "·";
 	left: -20px;
 	top: 0;
