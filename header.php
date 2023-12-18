@@ -7,7 +7,7 @@
 <html <?php language_attributes(); ?> class="no-js <?php if (function_exists('get_language_code') && is_multisite()) { echo 'lang-' . get_language_code(get_current_blog_id()); } ?>">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
