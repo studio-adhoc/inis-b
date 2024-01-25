@@ -2128,6 +2128,10 @@ h2.tribe-events-schedule__datetime {
 	font-family: 'Work Sans', Arial, sans-serif !important;
 }
 
+.tribe-common a.read-more, .tribe-common .read-more a.more-link {
+	color: #FFF !important;
+}
+
 .tribe-common .tribe-common-l-container {
 	max-width: 1136px;
 	padding-left: 18px !important;
