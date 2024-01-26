@@ -67,9 +67,13 @@ add_filter( 'upload_mimes', 'custom_mime' );
 add_filter( 'acf/settings/enable_post_types', '__return_false' );
 
 /*-----------------------------------------------------------------------------------*/
-/* Disable OPtions Pages in ACF 
+/* Disable Options Pages in ACF & ACF PRO
 /*-----------------------------------------------------------------------------------*/
 add_filter( 'acf/settings/enable_options_pages_ui', '__return_false' );
+
+add_action( 'admin_init', function () {
+	remove_submenu_page( 'edit.php?post_type=acf-field-group', 'acf_options_preview' );
+}, 99 );
 
 /*-----------------------------------------------------------------------------------*/
 /* Init Widget Areas
