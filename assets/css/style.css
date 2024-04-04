@@ -839,8 +839,8 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
   padding: 0 18px;
 }
 
-.uses-block-editor .tribe-events-pg-template .single-item > :not(section):not(figure):not(hr),
-.uses-block-editor .post-content > :not(section):not(figure):not(hr) {
+.uses-block-editor .tribe-events-pg-template .single-item > :not(section):not(hr),
+.uses-block-editor .post-content > :not(section):not(hr) {
   max-width: 1100px;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -904,6 +904,10 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
 .uses-block-editor .has-medium-font-size, .uses-block-editor .has-medium-font-size {
   font-size: 20px;
 	font-size: 1.25rem;
+}
+
+.uses-block-editor .post-content .wp-block-video {
+	box-sizing: content-box;
 }
 
 .uses-block-editor .post-content .wp-block-cover {

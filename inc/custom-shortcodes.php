@@ -666,6 +666,18 @@ function post_list( $atts ) {
           );
         }
 
+        if ($atts['type'] == 'tribe_events') {
+          $args['orderby'] = 'meta_value';
+          $args['meta_key'] = '_EventStartDate';
+          $args['meta_query'] = array(
+            array(
+              'key' => '_EventStartDate',
+              'value' => date('Y-m-d H:i'),
+              'compare' => '>'
+            )
+          );
+        }
+
         if ($atts['type'] == 'project') {
           $args['order'] = $order_set == false ? 'ASC' : $atts['order'];
           $args['orderby'] = $orderby_set == false ? 'menu_order' : $atts['orderby'];

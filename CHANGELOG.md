@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.33] - 2024-04-04
+
+### Changed
+
+- Adjusted block editor font css for WP 6.5 
+
+### Fixed
+
+- Alignment Display of Videos
+- Sorting for tribe events in postlist shortcode
+
 ## [1.0.32] - 2024-01-26
 
 ### Added
