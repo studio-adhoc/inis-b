@@ -468,7 +468,8 @@ function get_custom_sharer($pID,$align='center',$display='block',$button_text='S
 
 				$output .= '<div class="filter-button button-mail"><a href="mailto:?subject=' . $title . '&amp;body=Link%20zur%20Seite:%20' . get_permalink($pID) . '">' . __('Mail', 'inis-b') . '</a></div>';
 				$output .= '<div class="filter-button button-facebook"><a href="http://www.facebook.com/sharer.php?u=' . urlencode(get_permalink($pID)) . '&amp;t=' . $title . '" target="_blank">' . __('Facebook', 'inis-b') . '</a></div>';
-				$output .= '<div class="filter-button button-twitter"><a href="https://twitter.com/intent/tweet?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('Twitter', 'inis-b') . '</a></div>';
+				$output .= '<div class="filter-button button-x"><a href="https://x.com/intent/post?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('X', 'inis-b') . '</a></div>';
+        //$output .= '<div class="filter-button button-twitter"><a href="https://twitter.com/intent/tweet?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('Twitter', 'inis-b') . '</a></div>';
 			$output .= '</nav>';
 		$output .= '</div>';
 	$output .= '</div>';

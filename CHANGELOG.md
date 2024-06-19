@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.34] - 2024-06-19
+
+### Changed
+
+- Changed Sharer Button from Twitter to X 
+
 ## [1.0.33] - 2024-04-04
 
 ### Changed
