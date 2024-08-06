@@ -867,6 +867,28 @@ function get_sticky_posts($type = 'all') {
 }
 
 /*-----------------------------------------------------------------------------------*/
+/* Borlabs Cookie Check
+/*-----------------------------------------------------------------------------------*/
+if (!function_exists('borlabs_cookie_gave_consent')) {
+	function borlabs_cookie_gave_consent($name) {
+		$output = false;
+
+		if (isset($_COOKIE['borlabs-cookie'])) {
+			$cookie = @json_decode(stripcslashes($_COOKIE['borlabs-cookie']));
+			if (isset($cookie->consents)) {
+				foreach ($cookie->consents as $consent) {
+					if (in_array($name, $consent)) {
+						return true;
+					}
+				}
+			}
+		}
+		
+		return $output;
+	}
+}
+
+/*-----------------------------------------------------------------------------------*/
 /* Remove Users from XML Sitemap
 /*-----------------------------------------------------------------------------------*/
 add_filter(

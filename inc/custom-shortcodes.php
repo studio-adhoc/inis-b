@@ -388,11 +388,39 @@ function member_login() {
 add_shortcode('login', 'member_login');
 
 /*-----------------------------------------------------------------------------------*/
+/* Shortcode cookies_accepted: blendet Inhalte ein, wenn Cookies akzeptiert wurden.
+/*-----------------------------------------------------------------------------------*/
+function inis_cn_cookies_accepted( $atts, $content = null ) {
+	extract( shortcode_atts( array(
+		'cookie' => 'borlabs-cookie',
+    'before_content' => '',
+    'after_content' => '',
+	), $atts ) );
+
+  if (function_exists('cn_cookies_accepted') && cn_cookies_accepted()) {
+    return $before_content . do_shortcode($content) . $after_content;
+  } elseif (is_plugin_active('borlabs-cookie/borlabs-cookie.php') && function_exists('borlabs_cookie_gave_consent') && borlabs_cookie_gave_consent($cookie)) {
+	  return $before_content . do_shortcode($content) . $after_content;
+  } else {
+    return '';
+  }
+}
+add_shortcode('cookies_accepted', 'inis_cn_cookies_accepted');
+
+/*-----------------------------------------------------------------------------------*/
 /* Shortcode cookies_not_accepted: blendet Inhalte ein, wenn Cookies nicht akzeptiert wurden.
 /*-----------------------------------------------------------------------------------*/
 function inis_cn_cookies_not_accepted( $atts, $content = null ) {
+  extract( shortcode_atts( array(
+		'cookie' => 'borlabs-cookie',
+    'before_content' => '',
+    'after_content' => '',
+	), $atts ) );
+
   if (function_exists('cn_cookies_accepted') && !cn_cookies_accepted()) {
-	   return do_shortcode($content);
+	   return $before_content . do_shortcode($content) . $after_content;
+  } elseif (is_plugin_active('borlabs-cookie/borlabs-cookie.php') && function_exists('borlabs_cookie_gave_consent') && !borlabs_cookie_gave_consent($cookie)) {
+     return $before_content . do_shortcode($content) . $after_content;
   } else {
     return '';
   }
@@ -571,6 +599,7 @@ function post_list_default_atts() {
     'exclude_cat' => '',
     'post__in' => '',
 		'posts_per_page' => -1,
+    'event_query_date' => 'Start',
     'layout' => 'post-list',
     'only_partner_posts' => '',
     'only_own_posts' => '',
@@ -672,7 +701,7 @@ function post_list( $atts ) {
           $args['meta_key'] = '_EventStartDate';
           $args['meta_query'] = array(
             array(
-              'key' => '_EventStartDate',
+              'key' => '_Event' . $atts['event_query_date'] . 'Date',
               'value' => date('Y-m-d H:i'),
               'compare' => '>'
             )
