@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.36] - YYYY-MM-DD
+
+### Fixed
+
+- Temporary fix for theme translations in WP 6.7
+
 ## [1.0.35] - 2024-08-06
 
 ### Added
