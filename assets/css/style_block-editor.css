@@ -141,8 +141,10 @@ body.block-editor-page .editor-default-block-appender {
   height: 100% !important;
 }
 
+.editor-styles-wrapper,
 .edit-post-visual-editor .editor-styles-wrapper {
   font-family: 'Work Sans', Arial, sans-serif !important;
+	color: #000;
 }
 
 .wp-block {
@@ -555,6 +557,7 @@ html :where(.wp-block)[data-align="full"],
 }
 
 /* Columns */
+.editor-styles-wrapper :where(.wp-block-columns.is-layout-flex),
 .edit-post-visual-editor .editor-styles-wrapper :where(.wp-block-columns.is-layout-flex) {
   gap: 2em;
 }
