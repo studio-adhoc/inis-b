@@ -8,8 +8,7 @@
 /* Theme Setup
 /*-----------------------------------------------------------------------------------*/
 function inis_b_setup() {
-	//load_theme_textdomain( 'inis-b', get_template_directory() . '/languages' );
-	load_textdomain( 'inis-b', get_template_directory() . '/languages/' . determine_locale() . '.mo' );
+	load_theme_textdomain( 'inis-b', get_template_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'inis_b_setup' );
 

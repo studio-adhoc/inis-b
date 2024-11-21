@@ -5,13 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [1.0.37] - 2024-11-24
+## [1.0.38] - 2024-11-21
+
+### Fixed
+
+- Revert temporary fix for theme translations in WP 6.7. Bug fixed in WP 6.7.1
+
+## [1.0.37] - 2024-11-14
 
 ### Fixed
 
 - Adjust Block Editor Styles for Block API 3 iframe
 
-## [1.0.36] - 2024-11-24
+## [1.0.36] - 2024-11-14
 
 ### Fixed
 
