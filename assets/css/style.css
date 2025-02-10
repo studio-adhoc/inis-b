@@ -1767,6 +1767,9 @@ hr.wp-block-separator.alignfull {
   font-size: 1.875rem;
   line-height: 1;
   color: #FFF;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
 }
 
 #TB_next a {

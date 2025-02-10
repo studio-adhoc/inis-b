@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.39] - 2025-02-10
+
+### Changed
+
+- Switched is.js to is-it-check.js
+- Adjust README.md
+
+### Fixed
+
+- Fixed Slider Navigation CSS
+
 ## [1.0.38] - 2024-11-21
 
 ### Fixed
