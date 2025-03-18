@@ -43,9 +43,9 @@ function inis_b_Browser() {
 }
 
 function checkHeader() {
-  if ($(window).width() > 972) {
+  /*if ($(window).width() > 972) {
     $('.main li:has(> ul)').doubleTapToGo();
-  }
+  }*/
 
 	if ( $(document).scrollTop() > $('.a_header').outerHeight() - 78 && $('.a_all').outerHeight() > windowHeight ) {
 		$('html').addClass('header-fixed');

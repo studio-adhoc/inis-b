@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.40] - 2025-03-18
+
+### Added
+
+- New Services for Sharer Shortcode: Bluesky, WhatsApp, LinkedIn
+
+### Fixed
+
+- Fixed Warning in Customizer
+- Removed DoubleTapToGo Script 
+
 ## [1.0.39] - 2025-02-10
 
 ### Changed

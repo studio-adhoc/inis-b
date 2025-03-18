@@ -126,35 +126,38 @@ add_filter(
 /* Remove Blocks from CPT
 /*-----------------------------------------------------------------------------------*/
 function inis_b_editor_allowed_block_types( $allowed_block_types, $block_editor_context ) {
-	$post = $block_editor_context->post;
-	$restricted_cpt = apply_filters('inis_b_blockeditor_restricted_cpt', array('member','project'));
-	
-	$block_types = WP_Block_Type_Registry::get_instance()->get_all_registered();
+	$screen = get_current_screen();
+	if ( $screen->parent_base == 'edit' ) {
+		$post = $block_editor_context->post;
+		$restricted_cpt = apply_filters('inis_b_blockeditor_restricted_cpt', array('member','project'));
+		
+		$block_types = WP_Block_Type_Registry::get_instance()->get_all_registered();
 
-  if (!empty($block_types)) {
-    $allowed_block_types = array();
+		if (!empty($block_types)) {
+			$allowed_block_types = array();
 
-    foreach ($block_types as $key => $value) {
-      if ($value->category != 'theme') {
-        $allowed_block_types[] = $key;
-      }
-    }
-  }
+			foreach ($block_types as $key => $value) {
+			if ($value->category != 'theme') {
+				$allowed_block_types[] = $key;
+			}
+			}
+		}
 
-	$block_types_restricted_cpt = apply_filters('inis_b_block_types_restricted_cpt', array(
-		'core/paragraph',
-		'core/image',
-		'core/heading',
-		'core/quote',
-		'core/list',
-		'core/button',
-		'core/spacer'
-	));
+		$block_types_restricted_cpt = apply_filters('inis_b_block_types_restricted_cpt', array(
+			'core/paragraph',
+			'core/image',
+			'core/heading',
+			'core/quote',
+			'core/list',
+			'core/button',
+			'core/spacer'
+		));
 
-  if ( isset($restricted_cpt) && in_array($post->post_type, $restricted_cpt) ) {
-    $allowed_block_types = $block_types_restricted_cpt;
-  }
+		if ( isset($restricted_cpt) && in_array($post->post_type, $restricted_cpt) ) {
+			$allowed_block_types = $block_types_restricted_cpt;
+		}
+	}
 
-  return $allowed_block_types;
+	return $allowed_block_types;
 }
 add_filter( 'allowed_block_types_all', 'inis_b_editor_allowed_block_types', 10, 2 );

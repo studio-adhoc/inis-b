@@ -490,13 +490,16 @@ function get_custom_sharer($pID,$align='center',$display='block',$button_text='S
 			$output .= '<nav class="single-navigation sharer-navigation">';
 				$output .= '<div class="filter-button button-permalink"><a href="' . get_permalink($pID) . '">' . __('Permalink', 'inis-b') . '</a></div>';
 
-				$title_raw = get_the_title($pID);
+				$title_raw = (is_front_page()) ? get_bloginfo('name') . ' – ' . html_entity_decode(get_bloginfo('description')) : get_the_title($pID);
 				$title_raw_strip = strip_tags($title_raw);
 				$title = esc_attr($title_raw_strip);
 
 				$output .= '<div class="filter-button button-mail"><a href="mailto:?subject=' . $title . '&amp;body=Link%20zur%20Seite:%20' . get_permalink($pID) . '">' . __('Mail', 'inis-b') . '</a></div>';
 				$output .= '<div class="filter-button button-facebook"><a href="http://www.facebook.com/sharer.php?u=' . urlencode(get_permalink($pID)) . '&amp;t=' . $title . '" target="_blank">' . __('Facebook', 'inis-b') . '</a></div>';
-				$output .= '<div class="filter-button button-x"><a href="https://x.com/intent/post?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('X', 'inis-b') . '</a></div>';
+				$output .= '<div class="filter-button button-bluesky"><a href="https://bsky.app/intent/compose?text=' . $title . '%20' . urlencode(get_permalink($pID)) . '" target="_blank">' . __('Bluesky', 'inis-b') . '</a></div>';
+        $output .= '<div class="filter-button button-x"><a href="https://x.com/intent/post?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('X', 'inis-b') . '</a></div>';
+        $output .= '<div class="filter-button button-linkedin"><a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode(get_permalink($pID)) . '" target="_blank">' . __('LinkedIn', 'inis-b') . '</a></div>';
+        $output .= '<div class="filter-button button-whatsapp"><a href="https://api.whatsapp.com/send?text=' . urlencode(get_permalink($pID)) . '%20%E2%80%A6%20%20' . $title . '" target="_blank">' . __('WhatsApp', 'inis-b') . '</a></div>';
         //$output .= '<div class="filter-button button-twitter"><a href="https://twitter.com/intent/tweet?url=' . urlencode(get_permalink($pID)) . '&amp;text=' . $title . '" target="_blank">' . __('Twitter', 'inis-b') . '</a></div>';
 			$output .= '</nav>';
 		$output .= '</div>';
