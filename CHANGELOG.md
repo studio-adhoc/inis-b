@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.41] - 2025-04-15
+
+### Changed
+
+- Remove doubletaptogo.js
+
+### Fixed
+
+- Fixed Link Color in Block Editor
+- Fixed Focus Display Bug for Tribe Events Calendar
+
 ## [1.0.40] - 2025-03-18
 
 ### Added

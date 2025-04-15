@@ -147,6 +147,10 @@ body.block-editor-page .editor-default-block-appender {
 	color: #000;
 }
 
+a {
+  color: inherit;
+}
+
 .wp-block {
 	max-width: 1100px;
 }

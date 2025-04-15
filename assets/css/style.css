@@ -2001,6 +2001,11 @@ h2.tribe-events-schedule__datetime {
   color: #000;
 }
 
+.tribe-events .tribe-events-calendar-month__calendar-event-title-link, 
+.tribe-events .tribe-events-calendar-month__calendar-event-tooltip-title-link {
+	hyphens: auto;
+}
+
 /* Tribe Event Calendar List */
 .tribe-events-list-event-title .tribe-event-url {
   border: 0;
@@ -2065,6 +2070,15 @@ h2.tribe-events-schedule__datetime {
   padding-right: 0 !important;
 }
 
+.single-tribe_events .tribe-events-single .tribe-events-event-meta {
+	width: 100%;
+	padding-top: 30px;
+}
+
+.single-tribe_events .tribe-events-event-meta:before {
+	border: 0;
+}
+
 .single-tribe_events .tribe-events-event-meta.secondary {
   margin-top: 0;
 }
@@ -2087,6 +2101,14 @@ h2.tribe-events-schedule__datetime {
   border: 0;
   margin: 20px 0 0;
   border-radius: 0;
+}
+
+.single-tribe_events .tribe-events-sub-nav a {
+	border-bottom: 0;
+}
+
+.tribe-address {
+	display: block;
 }
 
 /* ---- Event List ---- */
