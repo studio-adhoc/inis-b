@@ -1153,6 +1153,10 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
   margin-left: 50%;
 }
 
+.wp-block-buttons {
+	box-sizing: content-box;
+}
+
 .wp-block-button__link {
   background-color: #000;
   font-weight: 600;

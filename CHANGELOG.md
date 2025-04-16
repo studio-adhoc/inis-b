@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.42] - 2025-04-16
+
+### Fixed
+
+- Adjust Button Style in Block Editor
+
 ## [1.0.41] - 2025-04-15
 
 ### Changed
