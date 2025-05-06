@@ -707,6 +707,18 @@ function post_list( $atts ) {
               'key' => '_Event' . $atts['event_query_date'] . 'Date',
               'value' => date('Y-m-d H:i'),
               'compare' => '>'
+            ),
+            array(
+              'relation' => 'OR',
+              array(
+                'key' => '_EventHideFromUpcoming',
+                'compare' => 'NOT EXISTS'
+              ),
+              array(
+                'key' => '_EventHideFromUpcoming',
+                'value' => 'yes',
+                'compare' => '!='
+              )
             )
           );
         }

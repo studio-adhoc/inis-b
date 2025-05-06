@@ -5,11 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.43] - 2025-05-06
+
+### Added
+
+- Only show events in post-list shortcode if '_EventHideFromUpcoming' is not 'yes'
+
+### Changed
+
+- Adjust README.md
+
 ## [1.0.42] - 2025-04-16
 
 ### Fixed
 
-- Adjust Button Style in Block Editor
+- Adjust Button Style in Block for WP 6.8
 
 ## [1.0.41] - 2025-04-15
 
