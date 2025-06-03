@@ -45,8 +45,6 @@ function inis_b_Browser() {
 }
 
 function moveToTop(event) {
-	event.preventDefault();
-
 	// Focus the first focusable element.
 	focusableElements[0].focus({
 		preventScroll: true,
