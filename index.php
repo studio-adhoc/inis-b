@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="a_content">
+<main class="a_content">
 	<div class="a_content_inner">
 		<?php if ( have_posts() ) : ?>
 
@@ -48,7 +48,7 @@
 
 		<?php endif; ?>
 	</div>
-</div>
+</main>
 
 <?php get_sidebar(); ?>
 

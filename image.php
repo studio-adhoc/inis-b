@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="a_content">
+<main class="a_content">
 	<div class="a_content_inner">
 		<?php the_post(); ?>
 
@@ -88,7 +88,7 @@
 			</div>
 		</article>
 	</div>
-</div>
+</main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

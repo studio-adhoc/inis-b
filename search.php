@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="a_content">
+<main class="a_content">
 	<?php if ( is_internal() ) { internal_header(); } ?>
 
 	<div class="a_content_inner">
@@ -46,7 +46,7 @@
 
 		<?php endif; ?>
 	</div>
-</div>
+</main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

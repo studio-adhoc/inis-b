@@ -96,9 +96,10 @@ function inis_b_custom_color_image($pageID) {
 
 		$output .= "\t::selection { color:  " . $selection_text . "; background: " . $selection_background . "; }";
 		$output .= "\t::-moz-selection { color:  " . $selection_text . "; background: " . $selection_background . "; }";
-		$output .= "\t.a_navi .main li.current-menu-item  > a, .a_navi .main li.current-menu-parent > a, .a_navi .main li.current-menu-ancestor > a, .a_navi .main li.current_page_parent > a { color: " . $theme_color . "; }";
+		$output .= "\t.a_navi .main li.current-menu-item > a, .a_navi .main li.current-menu-parent > a, .a_navi .main li.current-menu-ancestor > a, .a_navi .main li.current_page_parent > a { color: " . $theme_color . "; }";
+		$output .= "\t.a_navi .main li.current-menu-item > button, .a_navi .main li.current-menu-parent > button, .a_navi .main li.current-menu-ancestor > button, .a_navi .main li.current_page_parent > button { color: " . $theme_color . "; }";
 		$output .= "\t.a_navi .main li.intern > a {  color: #FFF; }";
-		$output .= "\t.has-neon-color, .a_navi .main li:hover > a, .a_navi .main li.intern > a:hover, .a_navi .main a:hover, .navi-button-inner:hover:after, .wp-block-button a:hover, .button a:hover, a.button:hover, a.more-link:hover, button:hover, input[type=submit]:hover, input[type=button]:hover { color: " . $theme_color . "; }";
+		$output .= "\t.has-neon-color, .a_navi .main li:hover > a, .a_navi .main li:hover > button, .a_navi .main li.intern > a:hover, .a_navi .main a:hover, .navi-button-inner:hover:after, .wp-block-button a:hover, .button a:hover, a.button:hover, a.more-link:hover, button:not(.submenu-toggle):hover, input[type=submit]:hover, input[type=button]:hover { color: " . $theme_color . "; }";
 		$output .= "\t#tribe-events .tribe-events-button:hover, .tribe-events-button.tribe-active:hover, .tribe-events-button.tribe-inactive, .tribe-events-button:hover, a.tribe-events-read-more:hover, .tribe-events-list .tribe-events-loop .tribe-event-featured a:hover { color: " . $theme_color . "; }";
 		$output .= "\t#tribe-events-content table.tribe-events-calendar .type-tribe_events.tribe-event-featured, .tribe-events-list .tribe-events-loop .tribe-event-featured { background-color: " . $theme_color . "; }";
 		$output .= "\t.has-neon-background-color, .member-list-compact .list-item { background-color: " . $theme_color . "; }";
@@ -121,8 +122,9 @@ function inis_b_custom_color_image($pageID) {
 	}
 
 	if (get_theme_mod('inis_b_theme_navi_button_text_color_light') == 1) {
-		$output .= "\t.a_navi .main li:hover > a, .a_navi .main li.intern > a:hover, .a_navi .main a:hover, .navi-button-inner:hover:after, .wp-block-button a:hover, .button a:hover, a.button:hover, a.more-link:hover, button:hover, input[type=submit]:hover, input[type=button]:hover { color: #FFF; }";
-		$output .= "\t.a_navi .main li.current-menu-item  > a, .a_navi .main li.current-menu-parent > a, .a_navi .main li.current-menu-ancestor > a, .a_navi .main li.current_page_parent > a { color: #FFF; }";
+		$output .= "\t.a_navi .main li:hover > a, .a_navi .main li.intern > a:hover, .a_navi .main a:hover, .navi-button-inner:hover:after, .wp-block-button a:hover, .button a:hover, a.button:hover, a.more-link:hover, button:not(.submenu-toggle):hover, input[type=submit]:hover, input[type=button]:hover { color: #FFF; }";
+		$output .= "\t.a_navi .main li.current-menu-item > a, .a_navi .main li.current-menu-parent > a, .a_navi .main li.current-menu-ancestor > a, .a_navi .main li.current_page_parent > a { color: #FFF; }";
+		$output .= "\t.a_navi .main li.current-menu-item > button, .a_navi .main li.current-menu-parent > button, .a_navi .main li.current-menu-ancestor > button, .a_navi .main li.current_page_parent > button { color: #FFF; }";
 	}
 
 	/* Tribe Events Calendar */

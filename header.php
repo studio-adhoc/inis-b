@@ -16,14 +16,16 @@
 
 <body <?php body_class(); ?> id="top">
 
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'inis-b' ); ?></a>
+
 <div class="a_all" id="content-top">
-	<div class="a_header">
+	<header class="a_header">
 		<div class="header-inner">
 			<?php if (function_exists('inis_b_header')) { inis_b_header(); } ?>
 			<div class="clear"></div>
 		</div>
-	</div>
+	</header>
 
 	<?php if (function_exists('inis_b_navi')) { inis_b_navi(); } ?>
 
-	<div class="a_wrapper">
+	<div class="a_wrapper" id="content">

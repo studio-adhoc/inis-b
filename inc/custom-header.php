@@ -4,7 +4,8 @@
 /*-----------------------------------------------------------------------------------*/
 function inis_b_scripts() {
 	wp_enqueue_style( 'inis-b-global-style', get_bloginfo('template_directory').'/assets/css/style_global.php', '','', 'all' );
-	
+	wp_enqueue_style( 'dashicons' );
+
 	if (get_theme_mod('inis_b_theme_font') == 'plex-serif' ) {
 		wp_enqueue_style( 'inis-b-fonts', get_bloginfo('template_directory').'/assets/css/font-serif.css', '','1.' . strtotime(date('Y-m-d H:i')), 'all' );
 	} elseif (get_theme_mod('inis_b_theme_font') == 'plex-mono') {
@@ -211,9 +212,9 @@ if (!function_exists('inis_b_navi')) {
 		<nav class="a_navi">
 			<div class="navi-wrapper">
 				<div class="navi-button">
-					<div class="navi-button-inner">
+					<a class="navi-button-inner">
 						<span><?php _e('Menu', 'inis-b'); ?></span>
-					</div>
+					</a>
 				</div>
 				<div class="navi-inner">
 					<div class="main">

@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-	<section class="archive category-archive">
+	<main class="archive category-archive">
 		<div class="a_content">
 			<div class="a_content_inner">
 				<?php if ( have_posts() ) : ?>
@@ -50,7 +50,7 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	</section>
+	</main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

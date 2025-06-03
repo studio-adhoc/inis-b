@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-	<section class="archive blog-archive">
+	<main class="archive blog-archive">
 		<div class="a_content">
 			<?php if ( is_internal() ) { internal_header(); } ?>
 
@@ -60,7 +60,7 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	</section>
+	</main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

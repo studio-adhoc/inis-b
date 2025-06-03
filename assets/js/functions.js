@@ -1,6 +1,8 @@
 var $=jQuery;
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
+const backToTopButton = document.querySelector('.top-link');
+const focusableElements = document.querySelectorAll('button, a:not(.skip-link), input, select, textarea, [tabindex]:not([tabindex="-1"])');
 
 function inis_b_Browser() {
   if (is.chrome()) {
@@ -42,6 +44,15 @@ function inis_b_Browser() {
   }
 }
 
+function moveToTop(event) {
+	event.preventDefault();
+
+	// Focus the first focusable element.
+	focusableElements[0].focus({
+		preventScroll: true,
+	})
+}
+
 function checkHeader() {
 	if ( $(document).scrollTop() > $('.a_header').outerHeight() - 78 && $('.a_all').outerHeight() > windowHeight ) {
 		$('html').addClass('header-fixed');
@@ -77,7 +88,7 @@ jQuery(document).ready(function($) {
   $('.is-style-heading-toggle, .is-style-heading-toggle-boxed').addClass('toggle-headline closed').append('<span class="clear line"></span>');
   $('.is-style-heading-toggle + .wp-block-group, .is-style-heading-toggle-boxed + .wp-block-group').addClass('toggle-content closed');
 
-	//Extra Functions
+	// Extra Functions
 	inis_b_Browser();
 	checkHeader();
 
@@ -105,9 +116,25 @@ jQuery(document).ready(function($) {
   });
 
   //Toggle Mobile Nav
-	$('.navi-button').on('click', function() {
+	$('.navi-button').on('click', function(event) {
+    event.preventDefault();
 		$('body').toggleClass('navi-open');
 	});
+  
+  // Toggle Buttons for Sub Menu
+  var expand = '<span class="screen-reader-text">Untermenü anzeigen</span>'; 
+  var close = '<span class="screen-reader-text">Untermenü ausblenden</span>';
+
+  $('.menu-item-has-children > a').after('<button class="submenu-toggle" aria-expanded="false">' + expand + '</button>');
+  $('.current-menu-ancestor > button, .current-menu-ancestor > .sub-menu').addClass('menu-visible');
+
+  $('.submenu-toggle').on('click', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('menu-visible');
+    $(this).next('.sub-menu' ).toggleClass('menu-visible');
+    $(this).attr('aria-expanded', $(this).attr('aria-expanded') === 'false' ? 'true' : 'false');
+    $(this).not('.sharer-button').html($(this).html() === expand ? close : expand);
+  } );
 
   //Toggle Post List
   $('.post-list-extended .single-item').on('click', function() {
@@ -149,3 +176,5 @@ $(window).on('load', function() {
 $(window).on('scroll', function() {
 	checkHeader();
 });
+
+backToTopButton.addEventListener('click', moveToTop);

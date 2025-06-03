@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1] - 2025-06-03
+
+### Added
+
+- Added "Skip to content" Button
+
+### Changed
+
+- Adjust HTML Landmarkd for Accessibility
+- Adjust "Back to Top" Button for Accessibility
+- Adjust Navigation for Accessibility
+
 ## [1.0.43] - 2025-05-06
 
 ### Added

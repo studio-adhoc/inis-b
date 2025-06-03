@@ -486,8 +486,8 @@ function custom_sharer($pID,$align='center',$display='block',$button_text='Share
 function get_custom_sharer($pID,$align='center',$display='block',$button_text='Share') {
 	$output = '<div class="sharer-wrapper align-' .  $align. ' display-' . $display . '">';
 		$output .= '<div class="sharer">';
-			$output .= '<div class="sharer-headline sharer-button">' . $button_text . '</div>';
-			$output .= '<nav class="single-navigation sharer-navigation">';
+			$output .= '<a href="#" class="sharer-headline sharer-button submenu-toggle" aria-expanded="false">' . $button_text . '</a>';
+			$output .= '<nav class="single-navigation sharer-navigation sub-menu">';
 				$output .= '<div class="filter-button button-permalink"><a href="' . get_permalink($pID) . '">' . __('Permalink', 'inis-b') . '</a></div>';
 
 				$title_raw = (is_front_page()) ? get_bloginfo('name') . ' – ' . html_entity_decode(get_bloginfo('description')) : get_the_title($pID);

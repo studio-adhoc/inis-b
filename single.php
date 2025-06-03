@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="a_content">
+<main class="a_content">
 	<?php do_action( 'inis_b_before_single_post' ); ?>
 
 	<div class="a_content_inner">
@@ -18,7 +18,7 @@
 	</div>
 
 	<?php do_action( 'inis_b_after_single_post' ); ?>
-</div>
+</main>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
