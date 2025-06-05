@@ -124,7 +124,6 @@ jQuery(document).ready(function($) {
   var close = '<span class="screen-reader-text">Untermenü ausblenden</span>';
 
   $('.menu-item-has-children > a').after('<button class="submenu-toggle" aria-expanded="false">' + expand + '</button>');
-  $('.current-menu-ancestor > button, .current-menu-ancestor > .sub-menu').addClass('menu-visible');
 
   $('.submenu-toggle').on('click', function(event) {
     event.preventDefault();
