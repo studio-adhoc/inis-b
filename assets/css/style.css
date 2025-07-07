@@ -991,7 +991,7 @@ blockquote p, blockquote ul, blockquote ol, .post-content .button {
   padding-right: 18px;
 }
 
-.uses-block-editor .post-content .wp-block-embed {
+.uses-block-editor .post-content .wp-block-embed[class*='is-type-'] {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding-bottom: 14px;
