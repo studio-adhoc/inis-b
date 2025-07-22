@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
     }
   });
   $('.wp-block-image a').each(function( index ) {
-    if ($(this).attr('href').indexOf('/wp-content/uploads') >= 0 && $(this).attr('href').indexOf('.pdf') == 0) {
+    if ($(this).attr('href').indexOf('/wp-content/uploads') >= 0 && $(this).attr('href').indexOf('.pdf') == -1) {
       $(this).addClass('thickbox');
     }
   });
