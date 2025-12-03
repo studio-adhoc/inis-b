@@ -160,9 +160,9 @@ function inis_b_custom_backend_color_image() {
 		$output .= "\t.has-inis-b-theme-color-color { color: " . $theme_color . "; }";
 		$output .= "\t.has-inis-b-theme-color-background-color { background-color:" . $theme_color . "; }";
 		if (get_theme_mod('inis_b_underline_light') == 1) {
-			$output .= "\t.edit-post-visual-editor em, .edit-post-visual-editor italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em rgba(" . $r . "," . $g . "," . $b . ",0.4); }";
+			$output .= "\t.editor-styles-wrapper em, .editor-styles-wrapper italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em rgba(" . $r . "," . $g . "," . $b . ",0.4); }";
 		} else {
-			$output .= "\t.edit-post-visual-editor em, .edit-post-visual-editor italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em " . $theme_color . "; }";
+			$output .= "\t.editor-styles-wrapper em, .editor-styles-wrapper italic { box-shadow: inset 0 0.1em white, inset 0 -0.5em " . $theme_color . "; }";
 		}
 	}
 
