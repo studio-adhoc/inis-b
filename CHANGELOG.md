@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.5] - 2025-12-03
+
+### Fixed
+
+- Fixed action enqueue_block_editor_assets
+
 ## [1.1.4] - 2025-07-22
 
 ### Fixed

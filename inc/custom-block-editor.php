@@ -5,25 +5,27 @@
 function inis_b_add_block_editor_assets() {
 	global $pagenow;
 
-	wp_enqueue_style( 'inis-b-block-editor', get_bloginfo('template_directory') . '/assets/css/style_block-editor.css', false );
-	wp_enqueue_style( 'inis-b-block-editor-custom', get_bloginfo('template_directory') . '/assets/css/style_block-editor_custom.php', false );
+	if (is_admin()) {
+		wp_enqueue_style( 'inis-b-block-editor', get_bloginfo('template_directory') . '/assets/css/style_block-editor.css', false );
+		wp_enqueue_style( 'inis-b-block-editor-custom', get_bloginfo('template_directory') . '/assets/css/style_block-editor_custom.php', false );
 
-	$deps = array( 'wp-blocks', 'wp-dom-ready', 'wp-i18n' );
+		$deps = array( 'wp-blocks', 'wp-dom-ready', 'wp-i18n' );
 
-	if( $pagenow !== 'widgets.php' ) {
-		$deps[] = 'wp-edit-post';
+		if( $pagenow !== 'widgets.php' ) {
+			$deps[] = 'wp-edit-post';
+		}
+
+		wp_enqueue_script(
+			'inis-b-editor',
+			get_bloginfo('template_directory') . '/assets/js/functions_block-editor.js',
+			$deps,
+			'1.0.0'
+		);
+
+		wp_set_script_translations( 'inis-b-editor', 'inis-b', get_template_directory() . '/languages' );
 	}
-
-	wp_enqueue_script(
-		'inis-b-editor',
-		get_bloginfo('template_directory') . '/assets/js/functions_block-editor.js',
-		$deps,
-		'1.0.0'
-	);
-
-	wp_set_script_translations( 'inis-b-editor', 'inis-b', get_template_directory() . '/languages' );
 }
-add_action( 'enqueue_block_editor_assets', 'inis_b_add_block_editor_assets' );
+add_action( 'enqueue_block_assets', 'inis_b_add_block_editor_assets' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Add Block Editor Theme Support
