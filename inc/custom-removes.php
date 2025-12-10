@@ -43,7 +43,7 @@ add_action('widgets_init', 'remove_recent_comments_style');
 function inis_b_dequeue_unnecessary_styles() {
 	wp_dequeue_style( 'global-styles' );
 }
-add_action( 'wp_print_styles', 'inis_b_dequeue_unnecessary_styles', 100 );
+//add_action( 'wp_print_styles', 'inis_b_dequeue_unnecessary_styles', 100 );
 
 /*-----------------------------------------------------------------------------------*/
 /* Remove Comments from Pages

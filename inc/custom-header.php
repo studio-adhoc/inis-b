@@ -3,7 +3,7 @@
 /* Enqueue CSS and JS
 /*-----------------------------------------------------------------------------------*/
 function inis_b_scripts() {
-	wp_enqueue_style( 'inis-b-global-style', get_bloginfo('template_directory').'/assets/css/style_global.php', '','', 'all' );
+	//wp_enqueue_style( 'inis-b-global-style', get_bloginfo('template_directory').'/assets/css/style_global.php', '','', 'all' );
 	wp_enqueue_style( 'dashicons' );
 
 	if (get_theme_mod('inis_b_theme_font') == 'plex-serif' ) {
