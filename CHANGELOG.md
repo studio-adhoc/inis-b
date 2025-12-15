@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.8] - 2025-12-15
+
+### Fixed
+
+- Removed global style dependency
+
 ## [1.1.7] - 2025-12-10
 
 ### Changed
