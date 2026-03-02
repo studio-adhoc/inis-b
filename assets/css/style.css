@@ -2045,8 +2045,8 @@ button.tribe-events-c-top-bar__datepicker-button:hover {
 }
 
 .tribe-events .datepicker .day, .tribe-events .datepicker .month, .tribe-events .datepicker .year {
-	outline: none;
-  	outline-offset: 0;
+	outline: none !important;
+  	outline-offset: 0 !important;
 }
 
 .tribe-events .datepicker .day.current, .tribe-events .datepicker .month.current, .tribe-events .datepicker .year.current {
