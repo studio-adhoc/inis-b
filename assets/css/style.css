@@ -2040,6 +2040,14 @@ button.tribe-events-c-top-bar__datepicker-button:hover {
 	width: 100%;
 }
 
+.tribe-events .datepicker .day.current, .tribe-events .datepicker .month.current, .tribe-events .datepicker .year.current {
+	background-color: transparent;
+}
+
+.tribe-events .datepicker .day.current:hover, .tribe-events .datepicker .month.current:hover, .tribe-events .datepicker .year.current:hover {
+	color: #FFF;
+}
+
 /* Tribe Event Calendar Month */
 .tribe-events-tooltip .entry-title {
   padding: 0 6px;
