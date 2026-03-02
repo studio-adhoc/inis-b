@@ -2032,6 +2032,10 @@ button.tribe-events-c-top-bar__datepicker-button:hover {
 	background-color: transparent;
 }
 
+.tribe-events .datepicker .day, .tribe-events .datepicker .dow {
+	text-align: center;
+}
+
 .tribe-events-c-top-bar__datepicker-container .datepicker .datepicker-switch {
 	width: 100%;
 }
