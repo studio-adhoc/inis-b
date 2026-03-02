@@ -2033,7 +2033,7 @@ button.tribe-events-c-top-bar__datepicker-button:hover {
 }
 
 .tribe-events-c-top-bar__datepicker-container .datepicker .datepicker-switch {
-	width: auto;
+	width: 100%;
 }
 
 /* Tribe Event Calendar Month */
