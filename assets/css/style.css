@@ -1569,15 +1569,15 @@ textarea {
 }
 
 button, input[type=submit], input[type=button] {
-  font-family: 'Work Sans', Arial, sans-serif;
-  font-size: 1em;
+	font-family: 'Work Sans', Arial, sans-serif;
+	font-size: 1em;
 	color: #fff;
-  font-weight: 600;
-  letter-spacing: 0;
+	font-weight: 600;
+	letter-spacing: 0;
 	padding: 5px 12px;
 	margin-bottom: 10px;
 	background-color: #000;
-  border: 0;
+	border: 0;
 	width: auto;
 	cursor: pointer;
 	transition: color 0.5s, background-color 0.5s;
@@ -2026,6 +2026,14 @@ h2.tribe-events-schedule__datetime {
 
 #tribe-events-content table.tribe-events-calendar .type-tribe_events.tribe-event-featured {
   background-color: #000;
+}
+
+button.tribe-events-c-top-bar__datepicker-button:hover {
+	background-color: transparent;
+}
+
+.tribe-events-c-top-bar__datepicker-container .datepicker .datepicker-switch {
+	width: auto;
 }
 
 /* Tribe Event Calendar Month */
