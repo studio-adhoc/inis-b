@@ -1647,20 +1647,6 @@ span.wpcf7-list-item .wpcf7-list-item-label {
   aspect-ratio: 16/9 !important;
 }
 
-.embed-vimeo .embed-privacy-content,
-.embed-youtube .embed-privacy-content {
-  position: relative;
-}
-
-.embed-vimeo iframe,
-.embed-youtube iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-}
-
 .embed-privacy-opt-out {
 	margin-bottom: 14px;
 }
