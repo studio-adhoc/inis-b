@@ -236,11 +236,11 @@ add_action( 'admin_init', 'restrict_admin', 1 );
 function inis_b_login_redirect( $redirect_url, $POST_redirect_url, $user ) {
   if ( is_a( $user, 'WP_User' ) ) {
     if ( !$user->has_cap( 'edit_posts' ) && stripos($POST_redirect_url, '/wp-admin') !== false  && stripos($POST_redirect_url, '/uploads') === false) {
-			if (get_theme_mod('inis_b_active_website') != '1') {
-				$redirect_url = home_url();
-			} else {
-				$redirect_url = get_post_type_archive_link( 'internal' );
-			}
+		if (get_theme_mod('inis_b_active_website') != '1') {
+			$redirect_url = home_url();
+		} else {
+			$redirect_url = get_post_type_archive_link( 'internal' );
+		}
     }
   }
   return $redirect_url;
@@ -253,7 +253,14 @@ add_action( 'login_redirect', 'inis_b_login_redirect', 10, 3 );
 function post_remove () {
   if ( ! current_user_can( 'publish_posts' ) && ( ! wp_doing_ajax() ) ) {
     remove_menu_page( 'edit.php' );
-		remove_menu_page( 'edit.php?post_type=member' );
+	remove_menu_page( 'edit.php?post_type=member' );
+  }
+
+  if (apply_filters( 'inis_b_remove_ai_connector_page', true ) == true) {
+	remove_submenu_page( 'options-general.php', 'options-connectors.php' );
+  }
+  if (apply_filters( 'inis_b_remove_font_libary_page', true ) == true) {
+	remove_submenu_page( 'themes.php', 'font-library.php' );
   }
 }
 add_action('admin_menu', 'post_remove');

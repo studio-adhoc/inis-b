@@ -752,11 +752,14 @@ function post_list( $atts ) {
         }
 
         if ( $atts['cat'] != '' ) {
+          $term_array = explode(',', $atts['cat']);
           if ($atts['type'] == 'post') {
             $args['cat'] = $atts['cat'];
           } else {
             if ($atts['type'] == 'event') {
             	$taxonomy = 'event-category';
+            } elseif ($atts['type'] == 'tribe_events') {
+              $taxonomy = 'tribe_events_cat';
             } elseif ($atts['type'] == 'project') {
               $taxonomy = 'project-category';
             } elseif ($atts['type'] == 'member') {
@@ -766,7 +769,7 @@ function post_list( $atts ) {
             $args['tax_query'][] = array(
               'taxonomy' => $taxonomy,
               'field'    => 'term_id',
-              'terms'    => $atts['cat'],
+              'terms'    => $term_array,
             );
           }
         }
@@ -777,6 +780,8 @@ function post_list( $atts ) {
 
           if ($atts['type'] == 'event') {
           	$taxonomy = 'event-category';
+          } elseif ($atts['type'] == 'tribe_events') {
+            $taxonomy = 'tribe_events_cat';
           } elseif ($atts['type'] == 'project') {
             $taxonomy = 'project-category';
           } elseif ($atts['type'] == 'member') {

@@ -5,12 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.1.13] - 2026-04-13
+
+### Added
+
+- Filters for AI Connector Page & Font Library Page Display in WP 7.0
+
+### Changed
+
+- Excluded Cats fpr Post Lists
+
 ## [1.1.12] - 2026-03-03
 
 ### Fixed
 
 - CSS Position for Embed Privacy
-
 
 ## [1.1.11] - 2026-03-02
 
